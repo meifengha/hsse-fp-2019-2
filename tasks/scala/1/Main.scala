@@ -39,10 +39,6 @@ object Main {
 
   /**
    * Exercise 3 Counting Change
-   * Write a recursive function that counts how many different ways you can make
-   * change for an amount, given a list of coin denominations. For example,
-   * there is 1 way to give change for 5 if you have coins with denomiation
-   * 2 and 3: 2+3.
    */
   def countChange(money: Int, coins: List[Int]): Int = {
     if (money == 0) {
