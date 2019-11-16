@@ -98,6 +98,7 @@ object FunSets {
     xs.mkString("{", ",", "}")
   }
 
+
   /**
    * Prints the contents of a set on the console.
    */
