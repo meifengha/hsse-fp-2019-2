@@ -1,7 +1,5 @@
 package forcomp
 
-import common._
-
 object Anagrams {
 
   /** A word is simply a `String`. */
