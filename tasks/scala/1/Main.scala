@@ -17,13 +17,14 @@ object Main {
     val trueString1 = "sa1233(wq)(((aaczarq1)))cz"
     val trueString2 = "12431"
     val trueString3 = "(12341yadqz)"
-    val falseString1 = ")(("
+    val falseString1 = ")("
     val falseString2 = "11(1.c1z2))z"
+    val falseString3 = "11((1.c1z2)z"
 
     println("True:")
     println(balance(trueString1.toList), balance(trueString2.toList), balance(trueString3.toList))
     println("False:")
-    println(balance(falseString1.toList), balance(falseString2.toList))
+    println(balance(falseString1.toList), balance(falseString2.toList), balance(falseString3.toList))
 
     println("\n*****EXERCISE3*****\n")
     val coins1: List[Int] = List(1, 2, 5, 10)
@@ -32,7 +33,7 @@ object Main {
     println("coins: " + coins1)
     var money = 5
     println("money: " + money + "\nways to change: " + countChange(money, coins1))
-    money = 0
+    money = 0  // we can exchange zero in one way - given nothing
     println("money: " + money + "\nways to change: " + countChange(money, coins1))
     money = 123
     println("money: " + money + "\nways to change: " + countChange(money, coins1) + "\n")
@@ -48,7 +49,6 @@ object Main {
     println("money: " + money + "\nways to change: " + countChange(money, coins2) + "\n")
   }
 
-
   /**
    * Exercise 1
    */
@@ -58,21 +58,23 @@ object Main {
   /**
    * Exercise 2 Parentheses Balancing
    */
-  var count = 0
+
   def balance(chars: List[Char]): Boolean = {
-    if (chars.isEmpty) return (count == 0)
-    else if (chars.head == '(') count += 1
-    else if (chars.head == ')') count -= 1
-    if (count < 0) {
-      count = 0;
-      return false
+    def balanceCheck(chars: List[Char], count : Int): Boolean = {
+      if (chars.isEmpty) count == 0
+      else if (chars.head == '(') balanceCheck(chars.tail, count + 1)
+      else if (chars.head == ')') {
+       if (count <= 0) false else balanceCheck(chars.tail, count - 1)
+      } else balanceCheck(chars.tail, count)
     }
-    balance(chars.tail)
+
+    balanceCheck(chars, 0)
   }
 
   /**
    * Exercise 3 Counting Change
    */
+
   def countChange(money: Int, coins: List[Int]): Int = {
     if (money == 0) 1
     else if (coins.isEmpty || (money < 0)) 0
