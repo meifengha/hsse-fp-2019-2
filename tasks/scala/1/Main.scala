@@ -14,6 +14,7 @@ object Main {
   /**
    * Exercise 1
    */
+
   def pascal(c: Int, r: Int): Int = {
       if (c == 0 || r == 0 || c == r) 1
       else if (c > r) 0
@@ -23,6 +24,7 @@ object Main {
   /**
    * Exercise 2 Parentheses Balancing
    */
+
   def balance(chars: List[Char]): Boolean = {
     balance(chars, 0)
   }
@@ -46,6 +48,7 @@ object Main {
    * there is 1 way to give change for 5 if you have coins with denomiation
    * 2 and 3: 2+3.
    */
+
   def countChange(money: Int, coins: List[Int]): Int = {
      if (money <= 0) 0
      else countChangeAux(money, coins.sorted.reverse)
