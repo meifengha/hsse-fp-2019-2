@@ -7,9 +7,6 @@ object Main {
         print(pascal(col, row) + " ")
       println()
     }
-    println(countChange(10, List(3, 2, 5)));
-    println(List(3, 2, 5).tail);
-    println(balance("(a + (b * c + (n * k)))".toList));
   }
 
   /**
@@ -30,21 +27,20 @@ object Main {
    * Exercise 2 Parentheses Balancing
    */
   def balance(chars: List[Char]): Boolean = {
-    def balanceIterator(position: Int, count: Int): Boolean = {
-
-      if (position == chars.length)
+    def balancing(pos: Int, count: Int): Boolean = {
+      if (pos == chars.length)
         count == 0
-      else if (chars(position) == '(')
-        balanceIterator(position + 1, count + 1)
-      else if (chars(position) == ')')
+      else if (chars(pos) == '(')
+        balancing(pos + 1, count + 1)
+      else if (chars(pos) == ')')
         if (count == 0)
           false
         else
-          balanceIterator(position + 1, count - 1)
+          balancing(pos + 1, count - 1)
       else
-        balanceIterator(position + 1, count)
+        balancing(pos + 1, count)
     }
-    balanceIterator(0, 0)
+    balancing(0, 0)
   }
 
   /**
@@ -55,19 +51,16 @@ object Main {
    * 2 and 3: 2+3.
    */
   def countChange(money: Int, coins: List[Int]): Int = {
-    if (coins.contains(0))
+    if (money == 0)
     {
-      0;
-      // infinity loop
-    }
-    if (money == 0) {
       1;
     }
     else if (money < 0 || coins.isEmpty)
     {
       0;
     }
-    else {
+    else
+    {
       countChange(money, coins.tail) + countChange(money - coins.head, coins)
     }
   }
