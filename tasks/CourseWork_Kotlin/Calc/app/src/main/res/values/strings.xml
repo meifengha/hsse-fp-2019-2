@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Calc</string>
+
+<!--    <string name="numberOne">1</string>-->
+<!--    <string name="numberTwo">2</string>-->
+<!--    <string name="numberThree">3</string>-->
+<!--    <string name="numberFour">4</string>-->
+<!--    <string name="numberFive">5</string>-->
+<!--    <string name="numberFix">6</string>-->
+<!--    <string name="numberSeven">7</string>-->
+<!--    <string name="numberEight">8</string>-->
+<!--    <string name="numberNine">9</string>-->
+<!--    <string name="numberDot">.</string>-->
+<!--    <string name="numberMinus">-</string>-->
+<!--    <string name="numberPlus">+</string>-->
+<!--    <string name="numberMul">*</string>-->
+<!--    <string name="numberOpen">(</string>-->
+<!--    <string name="numberClose">)</string>-->
+
+</resources>
