@@ -1,0 +1,64 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.tictactoe_android_game"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:5:5-23:19
+12        android:allowBackup="true"
+12-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:6:13-39
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.0.2] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/5fa0e54aa2229735b1d847028a94ad5c/core-1.0.2/AndroidManifest.xml:22:18-86
+14        android:debuggable="true"
+15        android:icon="@drawable/app_icon"
+15-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:7:13-46
+16        android:label="@string/app_name"
+16-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:8:13-45
+17        android:roundIcon="@drawable/app_icon"
+17-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:9:13-51
+18        android:supportsRtl="true"
+18-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:10:13-39
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:11:13-44
+21        <activity
+21-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:12:9-13:20
+22            android:name="com.example.tictactoe_android_game.twoPlayerActivity"
+22-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:12:19-52
+23            android:screenOrientation="portrait" >
+23-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:12:53-89
+24        </activity>
+25        <activity
+25-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:14:9-15:20
+26            android:name="com.example.tictactoe_android_game.onePlayerActivity"
+26-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:14:19-52
+27            android:screenOrientation="portrait" >
+27-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:14:53-89
+28        </activity>
+29        <activity
+29-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:16:9-22:20
+30            android:name="com.example.tictactoe_android_game.startActivity"
+30-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:16:19-48
+31            android:screenOrientation="portrait" >
+31-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:16:49-85
+32            <intent-filter>
+32-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:17:13-21:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:18:17-68
+33-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:18:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:20:17-76
+35-->/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/src/main/AndroidManifest.xml:20:27-74
+36            </intent-filter>
+37        </activity>
+38    </application>
+39
+40</manifest>

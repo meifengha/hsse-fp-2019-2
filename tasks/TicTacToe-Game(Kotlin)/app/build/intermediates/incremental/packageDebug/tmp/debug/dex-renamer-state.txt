@@ -1,0 +1,4 @@
+#Sun Dec 01 01:41:42 MSK 2019
+base.0=/Users/nikitapurnov/Documents/Clone/TicTacToe-Game-Android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
