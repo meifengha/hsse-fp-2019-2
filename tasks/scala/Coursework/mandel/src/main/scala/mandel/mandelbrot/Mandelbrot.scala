@@ -10,9 +10,8 @@ import scala.concurrent.Future
 import complex._
 import bitmap._
 
-package object mandelbrot {
-  def compute(width: Int, height: Int, xMin: Double, xMax: Double, yMin: Double, yMax: Double): Bitmap = {
-    val maxIter = 500
+package object Mandelbrot {
+  def compute(width: Int, height: Int, xMin: Double, xMax: Double, yMin: Double, yMax: Double, maxIter: Int): Bitmap = {
     val bm = new Bitmap(width, height)
 
     val cx = (xMax - xMin) / width
@@ -21,7 +20,7 @@ package object mandelbrot {
     // Догадываюсь, что решение кривое, но вычисления действительно ускоряются
 
     val futures = {
-      for {y <- 0 until bm.height} yield Future {
+      for (y <- 0 until bm.height) yield Future {
         for (x <- 0 until bm.width) {
           val c = Complex(xMin + x * cx, yMin + y * cy)
           val iter = itMandel(c, maxIter, 4)
@@ -33,20 +32,19 @@ package object mandelbrot {
   }
 
   private def itMandel(c: Complex, iMax: Int, bailout: Int): Int = {
-    var z = Complex(0, 0)
-    for(i <- 0 until iMax){
-      z = z * z + c
-      if(z.abs > bailout) return i
+    @scala.annotation.tailrec
+    def inner(z: Complex, i: Int): Int = i match {
+      case x if x == iMax => iMax
+      case x if z.abs > bailout => x
+      case x => inner(z * z + c, x + 1)
     }
-    iMax;
+    inner(Complex(0, 0), 0)
   }
 
-  private def getColor(iter: Int, max: Int): Color = {
-    if (iter == max) return Color.BLACK
-    val c = 3 * math.log(iter) / math.log(max - 1.0)
-    if (c < 1) new Color(0, 0, (255 * c).toInt)
-    else if (c < 2) new Color(0, (255 * (c - 1)).toInt, 255)
-    else new Color((255 * (c - 2)).toInt, 255, 255)
+  private def getColor(iter: Int, max: Int): Color = (iter, 3 * math.log(iter) / math.log(max - 1.0)) match {
+    case (itr, _) if itr == max => Color.BLACK
+    case (_, col) if col < 1    => new Color(0, 0, (255 * col).toInt)
+    case (_, col) if col < 2    => new Color(0, (255 * (col - 1)).toInt, 255)
+    case (_, col)               => new Color((255 * (col - 2)).toInt, 255, 255)
   }
-
 }

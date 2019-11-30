@@ -4,5 +4,5 @@ case class Complex(real: Double, imag: Double) {
   def + (rhs: Complex) = Complex(real + rhs.real, imag + rhs.imag)
   def - (rhs: Complex) = Complex(real - rhs.real, imag - rhs.imag)
   def * (rhs: Complex) = Complex(real * rhs.real - imag * rhs.imag, real * rhs.imag + imag * rhs.real)
-  val abs: Double = math.hypot(real, imag)
+  lazy val abs: Double = math.hypot(real, imag)
 }
