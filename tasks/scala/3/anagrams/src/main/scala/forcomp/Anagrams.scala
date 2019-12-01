@@ -1,8 +1,5 @@
 package forcomp
 
-import common._
-//import scala.collection.mutable
-
 object Anagrams {
 
   /** A word is simply a `String`. */
@@ -89,8 +86,8 @@ object Anagrams {
 
   def combinations(occurrences: Occurrences): List[Occurrences] = occurrences match {
     case Nil => List(List())
-    case x :: xs => for { z <- combinations(xs); n <- 0 to x._2}
-      yield (if (n == 0) z else (x._1, n) :: z)
+    case x :: xs => for {y <- combinations(xs); n <- 0 to x._2}
+      yield (if (n == 0) y else (x._1, n) :: y)
   }
 
 
@@ -147,6 +144,18 @@ object Anagrams {
    *
    *  Note: There is only one anagram of an empty sentence.
    */
-  def sentenceAnagrams(sentence: Sentence): List[Sentence] = ???
+  def sentenceAnagrams(sentence: Sentence): List[Sentence] = {
+    def sentenceIter(occurrences: Occurrences): List[Sentence] = occurrences match {
+      case List() => List(List())
+      case _ => {
+        for {
+          c <- combinations(occurrences) if dictionaryByOccurrences.contains(c)
+          w <- dictionaryByOccurrences(c)
+          y <- sentenceIter(subtract(occurrences, c))
+        } yield w :: y
+      }
+    }
 
+    sentenceIter(sentenceOccurrences(sentence))
+  }
 }
