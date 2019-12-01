@@ -22,11 +22,13 @@ object Anagrams {
    *  Note: If the frequency of some character is zero, then that character should not be
    *  in the list.
    */
+
   type Occurrences = List[(Char, Int)]
 
   /** The dictionary is simply a sequence of words.
    *  It is predefined and obtained as a sequence using the utility method `loadDictionary`.
    */
+
   val dictionary: List[Word] = loadDictionary
 
   /** Converts the word into its character occurence list.
@@ -34,6 +36,7 @@ object Anagrams {
    *  Note: the uppercase and lowercase version of the character are treated as the
    *  same character, and are represented as a lowercase character in the occurrence list.
    */
+
   def wordOccurrences(w: Word): Occurrences = w.toLowerCase.toList.groupBy(identity).map{ case (ch, seq) => (ch, seq.length) }.toList.sorted
 
   /** Converts a sentence into its character occurrence list. */
@@ -55,6 +58,7 @@ object Anagrams {
    *    List(('a', 1), ('e', 1), ('t', 1)) -> Seq("ate", "eat", "tea")
    *
    */
+
   lazy val dictionaryByOccurrences: Map[Occurrences, List[Word]] = dictionary.groupBy(wordOccurrences)
 
   /** Returns all the anagrams of a given word. */
@@ -82,7 +86,13 @@ object Anagrams {
    *  Note that the order of the occurrence list subsets does not matter -- the subsets
    *  in the example above could have been displayed in some other order.
    */
-  def combinations(occurrences: Occurrences): List[Occurrences] = ???
+
+  def combinations(occurrences: Occurrences): List[Occurrences] = occurrences match {
+    case Nil => List(List())
+    case x :: xs => for { z <- combinations(xs); n <- 0 to x._2}
+      yield (if (n == 0) z else (x._1, n) :: z)
+  }
+
 
   /** Subtracts occurrence list `y` from occurrence list `x`.
    * 
@@ -94,7 +104,8 @@ object Anagrams {
    *  Note: the resulting value is an occurrence - meaning it is sorted
    *  and has no zero-entries.
    */
-  def subtract(x: Occurrences, y: Occurrences): Occurrences = ???
+
+  def subtract(x: Occurrences, y: Occurrences): Occurrences = x.filterNot(y.contains)
 
   /** Returns a list of all anagram sentences of the given sentence.
    *  
