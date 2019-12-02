@@ -48,4 +48,4 @@ Preview
   </tr>
   </table>
  
- <h3 align="right">Made By Rishabh</h3>
+ <h3 align="right">Made By Purnov Nikita</h3>
