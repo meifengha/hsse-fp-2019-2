@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/nikitapurnov/Documents/Clone/TicTacToe/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_result.xml",
+        "source": "/Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/res/layout/fragment_result.xml"
+    },
+    {
+        "merged": "/Users/nikitapurnov/Documents/Clone/TicTacToe/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_game.xml",
+        "source": "/Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/res/layout/fragment_game.xml"
+    },
+    {
+        "merged": "/Users/nikitapurnov/Documents/Clone/TicTacToe/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_title.xml",
+        "source": "/Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/res/layout/fragment_title.xml"
+    }
+]

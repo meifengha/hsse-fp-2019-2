@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                            
+                                                                     
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/game_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screen.game.GameFragment" android:tag="layout-land/fragment_game_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:id="@+id/row0"
+                style="@style/TableRow">
+
+                <TextView
+                    android:id="@+id/row0_column0"
+                    style="@style/CellDefault.Left"
+                    android:tag="binding_1"                       
+                                                                         />
+
+                <TextView
+                    android:id="@+id/row0_column1"
+                    style="@style/CellDefault.Middle"
+                    android:tag="binding_2"                       
+                                                                         />
+
+                <TextView
+                    android:id="@+id/row0_column2"
+                    style="@style/CellDefault.Right"
+                    android:tag="binding_3"                       
+                                                                         />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row1"
+                style="@style/TableRow">
+
+                <TextView
+                    android:id="@+id/row1_column0"
+                    style="@style/CellDefault.Left"
+                    android:layout_marginTop="0dp"
+                    android:tag="binding_4"                       
+                                                                         />
+
+                <TextView
+                    android:id="@+id/row1_column1"
+                    style="@style/CellDefault.Middle"
+                    android:layout_marginTop="0dp"
+                    android:tag="binding_5"                       
+                                                                         />
+
+                <TextView
+                    android:id="@+id/row1_column2"
+                    style="@style/CellDefault.Right"
+                    android:layout_marginTop="0dp"
+                    android:tag="binding_6"                       
+                                                                         />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row2"
+                style="@style/TableRow">
+
+                <TextView
+                    android:id="@+id/row2_column0"
+                    style="@style/CellDefault.Left"
+                    android:layout_marginTop="0dp"
+                    android:tag="binding_7"                       
+                                                                         />
+
+                <TextView
+                    android:id="@+id/row2_column1"
+                    style="@style/CellDefault.Middle"
+                    android:layout_marginTop="0dp"
+                    android:tag="binding_8"                       
+                                                                         />
+
+                <TextView
+                    android:id="@+id/row2_column2"
+                    style="@style/CellDefault.Right"
+                    android:layout_marginTop="0dp"
+                    android:tag="binding_9"                       
+                                                                         />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/end_game_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/end_game"
+            android:theme="@style/PlayButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/table_layout"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/current_turn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:tag="binding_10"                                     
+            android:textColor="@color/black_text_color"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/table_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

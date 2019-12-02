@@ -1,0 +1,239 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:2:1-21:12
+MERGED from [androidx.databinding:databinding-adapters:3.5.1] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/8617bb7b8f04617c4755c7a280798370/databinding-adapters-3.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:3.5.1] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/63b0715955231ac542bcc5b0a555e76e/databinding-runtime-3.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.navigation:navigation-ui-ktx:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/9060bb084369569d9f0601644d6f914d/jetified-navigation-ui-ktx-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-ui:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/9fb00f875fe500a1f3f5c18673b513a6/jetified-navigation-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/b3203a2703c9ae203679c2a9fbe266e5/material-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/e4af54affb10e41bd105fb1682a31c80/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/0424d0034f79906e7a7b9d9dc99684a8/core-ktx-1.1.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/53e57e4b792328e8ffe1ea21dc300755/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/849ee625dc98ad1508cdf85ccc0d0896/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-fragment-ktx:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/f33b6d0943ad25439aa1258c674b52c8/jetified-navigation-fragment-ktx-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/0848e1ff16b3e743ef26ea428e785dd7/lifecycle-extensions-2.1.0/AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.navigation:navigation-fragment:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/892e423b1a543e9958b10267ec9b28e7/jetified-navigation-fragment-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/60d5c8f550bdf10fadd2b1030e971653/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/0912e17e1860e723bb4b157cb89cedd7/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/be21c2b108a22ba7cc8efff163f84684/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/85d890d7dc2794c9d7bfa3c35fda1e41/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/45e013a46d1e67ed003717b55dcd2ee4/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/386da738a7dd0f3fce13520e3779c472/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-runtime-ktx:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/e25ea7fe8ec67ce78f97cfdde1a11119/jetified-navigation-runtime-ktx-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-runtime:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/78fb6715b0cd89d48abdefdc2cd21feb/jetified-navigation-runtime-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/25c7312864379397af68aa27c9c9a10a/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/e6447fd8aee13b3b4ef5b49cf41565d8/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/73d9e2a8e3f094588e6b3f55e2f04831/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/afb63e1a339c1506955dfc1c0ba5eb75/activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/1c2f5da5df587e2eb3e7e699246ea8a0/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/9d0e002d3b850fb52028c4f811f46df2/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/0a0f8c5429e91276459e0bcc2e3f325d/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/1e516f407b08af834d486d1c0866d6dd/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/eb2c88d84cdb4a84b385d9716c1f07a2/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/22a7a9ee4821dab204f1e78f1e8853e8/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/13eb9eac6164daec2dd9c13b0f542d59/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-common-ktx:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/6d721556d4180111284e5597abfa6125/jetified-navigation-common-ktx-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.navigation:navigation-common:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/75391d31f9700a734f13bec7da52ecd3/jetified-navigation-common-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/bb1e9c3642ce6a1bb05323d4af42ae33/transition-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/f2db3b125acb34c3b5483d276303312b/core-1.1.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/a5b88cf9ed3d42debdc6178714c6a8e0/lifecycle-process-2.1.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/958b2d1d5bd872b324e215f51cdad5be/lifecycle-service-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/81f39c0cc68213cdf862c61a0a3d5b59/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/8625a2eb60a2ef05c0d767217b56e597/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/6fbc7e29cac17695f574278584236b61/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/faa950514eaa0afd8a5f244c77f35652/lifecycle-livedata-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/332d000871f90d5f2e28bb0d6c847d16/lifecycle-livedata-core-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/47f55cb74fa0b23859e1f4ac18bc551b/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/507347c91a8496e99c8dd47f78209b91/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/101f790fcd1564aa63861b7ef9cb4768/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/97c36b9f235454b558a6d1531699de5a/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/bf3f5c2af98a9a2a72a0b01f7c0be27c/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/c1685934586d15a291730f1fa1035a2d/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/4e708f01438bec1e0cd5eb4006a9212a/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/c2e64146e92a7cf9dec61c36bbc6adfe/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:3:5-36
+		INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml
+		ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml
+		ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:5:5-19:19
+MERGED from [com.google.android.material:material:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/b3203a2703c9ae203679c2a9fbe266e5/material-1.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/b3203a2703c9ae203679c2a9fbe266e5/material-1.0.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/53e57e4b792328e8ffe1ea21dc300755/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/53e57e4b792328e8ffe1ea21dc300755/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/0848e1ff16b3e743ef26ea428e785dd7/lifecycle-extensions-2.1.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/0848e1ff16b3e743ef26ea428e785dd7/lifecycle-extensions-2.1.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.core:core:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/f2db3b125acb34c3b5483d276303312b/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/f2db3b125acb34c3b5483d276303312b/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/a5b88cf9ed3d42debdc6178714c6a8e0/lifecycle-process-2.1.0/AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/a5b88cf9ed3d42debdc6178714c6a8e0/lifecycle-process-2.1.0/AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/8625a2eb60a2ef05c0d767217b56e597/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/8625a2eb60a2ef05c0d767217b56e597/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/f2db3b125acb34c3b5483d276303312b/core-1.1.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:11:9-40
+activity#ilgulee.com.tictactoe.MainActivity
+ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml
+INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:databinding-adapters:3.5.1] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/8617bb7b8f04617c4755c7a280798370/databinding-adapters-3.5.1/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-adapters:3.5.1] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/8617bb7b8f04617c4755c7a280798370/databinding-adapters-3.5.1/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:3.5.1] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/63b0715955231ac542bcc5b0a555e76e/databinding-runtime-3.5.1/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:3.5.1] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/63b0715955231ac542bcc5b0a555e76e/databinding-runtime-3.5.1/AndroidManifest.xml:22:5-44
+MERGED from [android.arch.navigation:navigation-ui-ktx:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/9060bb084369569d9f0601644d6f914d/jetified-navigation-ui-ktx-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-ui-ktx:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/9060bb084369569d9f0601644d6f914d/jetified-navigation-ui-ktx-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-ui:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/9fb00f875fe500a1f3f5c18673b513a6/jetified-navigation-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-ui:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/9fb00f875fe500a1f3f5c18673b513a6/jetified-navigation-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/b3203a2703c9ae203679c2a9fbe266e5/material-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/b3203a2703c9ae203679c2a9fbe266e5/material-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/e4af54affb10e41bd105fb1682a31c80/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/e4af54affb10e41bd105fb1682a31c80/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/0424d0034f79906e7a7b9d9dc99684a8/core-ktx-1.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/0424d0034f79906e7a7b9d9dc99684a8/core-ktx-1.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/53e57e4b792328e8ffe1ea21dc300755/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/53e57e4b792328e8ffe1ea21dc300755/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/849ee625dc98ad1508cdf85ccc0d0896/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/849ee625dc98ad1508cdf85ccc0d0896/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-fragment-ktx:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/f33b6d0943ad25439aa1258c674b52c8/jetified-navigation-fragment-ktx-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-fragment-ktx:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/f33b6d0943ad25439aa1258c674b52c8/jetified-navigation-fragment-ktx-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/0848e1ff16b3e743ef26ea428e785dd7/lifecycle-extensions-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/0848e1ff16b3e743ef26ea428e785dd7/lifecycle-extensions-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-fragment:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/892e423b1a543e9958b10267ec9b28e7/jetified-navigation-fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-fragment:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/892e423b1a543e9958b10267ec9b28e7/jetified-navigation-fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/60d5c8f550bdf10fadd2b1030e971653/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/60d5c8f550bdf10fadd2b1030e971653/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/0912e17e1860e723bb4b157cb89cedd7/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/0912e17e1860e723bb4b157cb89cedd7/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/be21c2b108a22ba7cc8efff163f84684/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/be21c2b108a22ba7cc8efff163f84684/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/85d890d7dc2794c9d7bfa3c35fda1e41/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/85d890d7dc2794c9d7bfa3c35fda1e41/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/45e013a46d1e67ed003717b55dcd2ee4/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/45e013a46d1e67ed003717b55dcd2ee4/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/386da738a7dd0f3fce13520e3779c472/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/386da738a7dd0f3fce13520e3779c472/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-runtime-ktx:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/e25ea7fe8ec67ce78f97cfdde1a11119/jetified-navigation-runtime-ktx-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-runtime-ktx:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/e25ea7fe8ec67ce78f97cfdde1a11119/jetified-navigation-runtime-ktx-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-runtime:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/78fb6715b0cd89d48abdefdc2cd21feb/jetified-navigation-runtime-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-runtime:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/78fb6715b0cd89d48abdefdc2cd21feb/jetified-navigation-runtime-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/25c7312864379397af68aa27c9c9a10a/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/25c7312864379397af68aa27c9c9a10a/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/e6447fd8aee13b3b4ef5b49cf41565d8/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/e6447fd8aee13b3b4ef5b49cf41565d8/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/73d9e2a8e3f094588e6b3f55e2f04831/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/73d9e2a8e3f094588e6b3f55e2f04831/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/afb63e1a339c1506955dfc1c0ba5eb75/activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/afb63e1a339c1506955dfc1c0ba5eb75/activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/1c2f5da5df587e2eb3e7e699246ea8a0/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/1c2f5da5df587e2eb3e7e699246ea8a0/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/9d0e002d3b850fb52028c4f811f46df2/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/9d0e002d3b850fb52028c4f811f46df2/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/0a0f8c5429e91276459e0bcc2e3f325d/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/0a0f8c5429e91276459e0bcc2e3f325d/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/1e516f407b08af834d486d1c0866d6dd/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/1e516f407b08af834d486d1c0866d6dd/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/eb2c88d84cdb4a84b385d9716c1f07a2/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/eb2c88d84cdb4a84b385d9716c1f07a2/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/22a7a9ee4821dab204f1e78f1e8853e8/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/22a7a9ee4821dab204f1e78f1e8853e8/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/13eb9eac6164daec2dd9c13b0f542d59/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/13eb9eac6164daec2dd9c13b0f542d59/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-common-ktx:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/6d721556d4180111284e5597abfa6125/jetified-navigation-common-ktx-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-common-ktx:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/6d721556d4180111284e5597abfa6125/jetified-navigation-common-ktx-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-common:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/75391d31f9700a734f13bec7da52ecd3/jetified-navigation-common-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.navigation:navigation-common:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/75391d31f9700a734f13bec7da52ecd3/jetified-navigation-common-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/bb1e9c3642ce6a1bb05323d4af42ae33/transition-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/bb1e9c3642ce6a1bb05323d4af42ae33/transition-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/f2db3b125acb34c3b5483d276303312b/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/f2db3b125acb34c3b5483d276303312b/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/a5b88cf9ed3d42debdc6178714c6a8e0/lifecycle-process-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/a5b88cf9ed3d42debdc6178714c6a8e0/lifecycle-process-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/958b2d1d5bd872b324e215f51cdad5be/lifecycle-service-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/958b2d1d5bd872b324e215f51cdad5be/lifecycle-service-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/81f39c0cc68213cdf862c61a0a3d5b59/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/81f39c0cc68213cdf862c61a0a3d5b59/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/8625a2eb60a2ef05c0d767217b56e597/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/8625a2eb60a2ef05c0d767217b56e597/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/6fbc7e29cac17695f574278584236b61/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/6fbc7e29cac17695f574278584236b61/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/faa950514eaa0afd8a5f244c77f35652/lifecycle-livedata-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/faa950514eaa0afd8a5f244c77f35652/lifecycle-livedata-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/332d000871f90d5f2e28bb0d6c847d16/lifecycle-livedata-core-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/332d000871f90d5f2e28bb0d6c847d16/lifecycle-livedata-core-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/47f55cb74fa0b23859e1f4ac18bc551b/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/47f55cb74fa0b23859e1f4ac18bc551b/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/507347c91a8496e99c8dd47f78209b91/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/507347c91a8496e99c8dd47f78209b91/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/101f790fcd1564aa63861b7ef9cb4768/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/101f790fcd1564aa63861b7ef9cb4768/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/97c36b9f235454b558a6d1531699de5a/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/97c36b9f235454b558a6d1531699de5a/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/bf3f5c2af98a9a2a72a0b01f7c0be27c/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/bf3f5c2af98a9a2a72a0b01f7c0be27c/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/c1685934586d15a291730f1fa1035a2d/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/c1685934586d15a291730f1fa1035a2d/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/4e708f01438bec1e0cd5eb4006a9212a/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/4e708f01438bec1e0cd5eb4006a9212a/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/c2e64146e92a7cf9dec61c36bbc6adfe/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/c2e64146e92a7cf9dec61c36bbc6adfe/cardview-1.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml
+INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml
+		ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml
+		ADDED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/nikitapurnov/Documents/Clone/TicTacToe/app/src/main/AndroidManifest.xml
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/a5b88cf9ed3d42debdc6178714c6a8e0/lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/a5b88cf9ed3d42debdc6178714c6a8e0/lifecycle-process-2.1.0/AndroidManifest.xml:25:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/a5b88cf9ed3d42debdc6178714c6a8e0/lifecycle-process-2.1.0/AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/a5b88cf9ed3d42debdc6178714c6a8e0/lifecycle-process-2.1.0/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] /Users/nikitapurnov/.gradle/caches/transforms-2/files-2.1/a5b88cf9ed3d42debdc6178714c6a8e0/lifecycle-process-2.1.0/AndroidManifest.xml:24:13-79
