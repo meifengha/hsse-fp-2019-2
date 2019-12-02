@@ -1,5 +1,4 @@
 package recfun
-import common._
 
 object Main {
   def main(args: Array[String]) {
@@ -9,20 +8,41 @@ object Main {
         print(pascal(col, row) + " ")
       println()
     }
+
+    println("\nParentheses Balancing")
+    println("Example: \"(()(()\"")
+    println(balance("(()(()".toCharArray.toList))
+    println("Example: \"(()())\"")
+    println(balance("(()())".toCharArray.toList))
+
+    println("\nCounting Change")
+    println("Example: 6 [1, 2, 3]")
+    println(countChange(6, List(1, 2, 3)))
   }
 
   /**
    * Exercise 1
    */
   def pascal(c: Int, r: Int): Int = {
-
+    if ((c == r) || (c == 0)) {
+      1
+    } else {
+      pascal(c, r - 1) + pascal(c - 1, r - 1)
+    }
   }
 
   /**
    * Exercise 2 Parentheses Balancing
    */
   def balance(chars: List[Char]): Boolean = {
-   
+    var count = 0
+    def checkParenthesis(sym: Char) = {
+      if (sym == '(') count = count + 1
+      else if (sym == ')') count = count - 1
+    }
+    for (char <- chars) checkParenthesis(char)
+    if (count == 0) return true
+    else return false
   }
 
   /**
@@ -33,6 +53,14 @@ object Main {
    * 2 and 3: 2+3.
    */
   def countChange(money: Int, coins: List[Int]): Int = {
-
+    if (money == 0)
+    {
+      return 1
+    }
+    if (money < 0 || coins.isEmpty)
+    {
+      return 0
+    }
+    return countChange(money, coins.tail) + countChange(money - coins.head, coins)
   }
 }
