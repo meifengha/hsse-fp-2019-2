@@ -35,14 +35,19 @@ object Main {
    * Exercise 2 Parentheses Balancing
    */
   def balance(chars: List[Char]): Boolean = {
-    var count = 0
-    def checkParenthesis(sym: Char) = {
-      if (sym == '(') count = count + 1
-      else if (sym == ')') count = count - 1
+    def checkParenthesis(list: List[Char], counter: Int): Boolean = {
+      if (list.isEmpty) {
+        counter == 0
+      } else if (list.head == '(') {
+        checkParenthesis(list.tail, counter + 1)
+      } else if (list.head == ')') {
+        (counter > 0) && checkParenthesis(list.tail, counter - 1)
+      } else {
+        checkParenthesis(list.tail, counter)
+      }
     }
-    for (char <- chars) checkParenthesis(char)
-    if (count == 0) return true
-    else return false
+
+    checkParenthesis(chars, 0)
   }
 
   /**
