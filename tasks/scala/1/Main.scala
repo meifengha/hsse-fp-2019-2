@@ -10,6 +10,7 @@ object Main {
     println(balance(List('(', ')', '(')))
     println(balance(List(')', '(')))
     println(balance(List('(', '(', ')', ')')))
+    println(balance(List(')', '(', ')')))
 
     println(countChange(5, List(2, 3)))
   }
@@ -28,25 +29,22 @@ object Main {
    * Exercise 2 Parentheses Balancing
    */
   def balance(chars: List[Char]): Boolean = {
-    var count: Int = 0
-    var flag: Boolean = false;
-    def countBrakets(braket: Char)= {
-      if (braket == '(') {
-        count += 1
+    def countBrakets(list: List[Char], count: Int): Int = {
+      if (count < 0) {count}
+      else if (list.isEmpty) {count}
+      else if (list.head == '(') {
+        countBrakets(list.tail, count + 1)
       }
-      else if (braket == ')') {
-        count -= 1
-        if (count < 0) {
-          flag = true;
-        }
+      else if (list.head == ')') {
+        countBrakets(list.tail, count - 1)
       }
+      else countBrakets(list.tail, count)
     }
 
-    chars.foreach(countBrakets)
-    if (flag == true) {false}
-    else if (count == 0) {true}
+    if (countBrakets(chars, 0) == 0) {true}
     else {false}
   }
+
 
   /**
    * Exercise 3 Counting Change
