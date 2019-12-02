@@ -40,6 +40,7 @@ object Main {
       }
       else countBrakets(list.tail, count)
     }
+
     if (countBrakets(chars, 0) == 0) {true}
     else {false}
   }
