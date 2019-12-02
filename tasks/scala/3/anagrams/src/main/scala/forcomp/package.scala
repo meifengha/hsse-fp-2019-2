@@ -1,3 +1,4 @@
+import scala.io.Source;
 package object forcomp {
   val dictionaryPath = List("forcomp", "linuxwords.txt")
 
@@ -10,7 +11,7 @@ package object forcomp {
       sys.error("Could not load word list, dictionary file not found")
     }
     try {
-      val s = io.Source.fromInputStream(wordstream)
+      val s = scala.io.Source.fromInputStream(wordstream)
       s.getLines.toList
     } catch {
       case e: Exception =>
