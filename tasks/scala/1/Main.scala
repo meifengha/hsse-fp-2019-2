@@ -47,18 +47,15 @@ object Main {
    */
 
   def balance(chars: List[Char]): Boolean = {
-    var openBracket: Int = 0
-    var closeBracket: Int = 0
-    for (i <- 0 to chars.length - 1) {
-      if (chars(i) == '(') {
-        openBracket += 1
-      }
-      else if (chars(i) == ')') {
-        closeBracket += 1
-      }
+    def balanceCheck(chars: List[Char], count : Int): Boolean = {
+      if (chars.isEmpty) count == 0
+      else if (chars.head == '(') balanceCheck(chars.tail, count + 1)
+      else if (chars.head == ')') {
+       if (count <= 0) false else balanceCheck(chars.tail, count - 1)
+      } else balanceCheck(chars.tail, count)
     }
-    if (openBracket == closeBracket) true
-    else false
+
+    balanceCheck(chars, 0)
   }
 
   /**
