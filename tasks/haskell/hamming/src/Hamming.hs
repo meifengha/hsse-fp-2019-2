@@ -1,4 +1,10 @@
 module Hamming (distance) where
 
 distance :: String -> String -> Maybe Int
-distance xs ys = error "Implementation is lost..."
+distance xs ys 
+  | null xs || null ys = Just 0
+  | length xs /= length ys = Nothing
+  | otherwise = Just $ length different
+  where
+    different = filter (\(x, y) -> x /= y) zipped
+    zipped = zip xs ys
