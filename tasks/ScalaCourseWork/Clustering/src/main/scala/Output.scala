@@ -1,12 +1,13 @@
+import scala.collection.mutable.ArrayBuffer
 import scala.io.Source
 
 object Output {
-  def readValues(filePath: String) {
-    val bufX = scala.collection.mutable.ArrayBuffer.empty[Int]
-    val bufY = scala.collection.mutable.ArrayBuffer.empty[Int]
+  val bufX: ArrayBuffer[Int] = scala.collection.mutable.ArrayBuffer.empty[Int]
+  val bufY: ArrayBuffer[Int] = scala.collection.mutable.ArrayBuffer.empty[Int]
+
+  def readValuesFromFile(filePath: String) {
     val fSource = Source.fromFile(filePath)
     for (line <- fSource.getLines) {
-      println(line)
       val opBr = line.indexOf("(")
       val cm = line.indexOf(",")
       val clBr = line.indexOf(")")
