@@ -1,6 +1,6 @@
 package forcomp
 
-import common._
+import scala.collection.immutable.SortedMap
 
 object Anagrams {
 
@@ -33,15 +33,36 @@ object Anagrams {
    *  Note: the uppercase and lowercase version of the character are treated as the
    *  same character, and are represented as a lowercase character in the occurrence list.
    */
-  def wordOccurrences(w: Word): Occurrences = ???
+  def wordOccurrences(w: Word): Occurrences = {
+    def getOccurrencesMap(w: Word): Map[Char, Int] = {
+      if (w.isEmpty) {
+        Map()
+      } else {
+        val char = w.head.toLower
+        val map = getOccurrencesMap(w.tail)
+        val count = map.getOrElse(char, 0)
+        map + (char -> (count + 1))
+      }
+    }
+    getOccurrencesMap(w).toList.sortWith(_._1 < _._1)
+  }
 
   /** Converts a sentence into its character occurrence list. */
-  def sentenceOccurrences(s: Sentence): Occurrences = ???
+  def sentenceOccurrences(s: Sentence): Occurrences = {
+    def sentenceToString(s: Sentence): String = {
+      if (s.isEmpty) {
+        ""
+      } else {
+        s.head + sentenceToString(s.tail)
+      }
+    }
+    wordOccurrences(sentenceToString(s))
+  }
 
   /** The `dictionaryByOccurrences` is a `Map` from different occurrences to a sequence of all
    *  the words that have that occurrence count.
    *  This map serves as an easy way to obtain all the anagrams of a word given its occurrence list.
-   *  
+   *
    *  For example, the word "eat" has the following character occurrence list:
    *
    *     `List(('a', 1), ('e', 1), ('t', 1))`
@@ -53,10 +74,23 @@ object Anagrams {
    *    List(('a', 1), ('e', 1), ('t', 1)) -> Seq("ate", "eat", "tea")
    *
    */
-  lazy val dictionaryByOccurrences: Map[Occurrences, List[Word]] = ???
+  lazy val dictionaryByOccurrences: Map[Occurrences, List[Word]] = {
+    def occurrencesMap(s: Sentence): Map[Occurrences, List[Word]] = {
+      if (s.isEmpty) {
+        Map()
+      } else {
+        val map = occurrencesMap(s.tail)
+        val occurrence = wordOccurrences(s.head)
+        map + (occurrence -> (List(s.head) ::: map.getOrElse(occurrence, List())))
+      }
+    }
+    occurrencesMap(dictionary)
+  }
 
   /** Returns all the anagrams of a given word. */
-  def wordAnagrams(word: Word): List[Word] = ???
+  def wordAnagrams(word: Word): List[Word] = {
+    dictionaryByOccurrences.getOrElse(wordOccurrences(word), Nil)
+  }
 
   /** Returns the list of all subsets of the occurrence list.
    *  This includes the occurrence itself, i.e. `List(('k', 1), ('o', 1))`
@@ -80,7 +114,11 @@ object Anagrams {
    *  Note that the order of the occurrence list subsets does not matter -- the subsets
    *  in the example above could have been displayed in some other order.
    */
-  def combinations(occurrences: Occurrences): List[Occurrences] = ???
+  def combinations(occurrences: Occurrences): List[Occurrences] =
+    occurrences.foldRight(List[Occurrences](Nil)) {
+      case ((char, count), acc) =>
+        acc ++ acc.flatMap(comb => (1 to count).map((char, _) :: comb))
+    }
 
   /** Subtracts occurrence list `y` from occurrence list `x`.
    * 
@@ -92,7 +130,15 @@ object Anagrams {
    *  Note: the resulting value is an occurrence - meaning it is sorted
    *  and has no zero-entries.
    */
-  def subtract(x: Occurrences, y: Occurrences): Occurrences = ???
+  def subtract(x: Occurrences, y: Occurrences): Occurrences = y.foldLeft(SortedMap[Char, Int]() ++ x) {
+    case (map, (char, count)) =>
+      val remains = map(char) - count
+      if (remains == 0) {
+        map - char
+      } else {
+        map.updated(char, remains)
+      }
+  }.toList
 
   /** Returns a list of all anagram sentences of the given sentence.
    *  
@@ -134,6 +180,22 @@ object Anagrams {
    *
    *  Note: There is only one anagram of an empty sentence.
    */
-  def sentenceAnagrams(sentence: Sentence): List[Sentence] = ???
+  def sentenceAnagrams(sentence: Sentence): List[Sentence] = {
+
+    def iter(occurrences: Occurrences): List[Sentence] = {
+      if (occurrences.isEmpty) {
+        List()
+      }
+      else combinations(occurrences).flatMap(combination =>
+          dictionaryByOccurrences.getOrElse(combination, Nil).flatMap(word =>
+              iter(subtract(occurrences, wordOccurrences(word)))
+                .withFilter(_ => combination.nonEmpty)
+                .map(word :: _)
+            )
+        )
+    }
+
+    iter(sentenceOccurrences(sentence))
+  }
 
 }
