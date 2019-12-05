@@ -15,7 +15,7 @@ object Main {
   /**
    * Exercise 1
    */
-  def pascal(c: Int, r: Int): Int = {
+  def pascal(c: Long, r: Long): Long = {
     if (r == c || c == 0) 1 else pascal(c - 1, r - 1) + pascal(c, r - 1)
   }
 
