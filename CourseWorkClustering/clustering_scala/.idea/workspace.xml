@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d0c9d7e-54b6-466d-9b70-b9ab943f63c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/PointsComponent.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/PointsComponent.scala" afterDir="false" />
-    </list>
+    <list default="true" id="8d0c9d7e-54b6-466d-9b70-b9ab943f63c7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,6 +158,14 @@
       <option name="presentableId" value="Default" />
       <updated>1575542607742</updated>
     </task>
+    <task id="LOCAL-00001" summary="refactor: Code refactored">
+      <created>1575613520790</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575613520790</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,5 +178,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactor: Code refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: Code refactored" />
   </component>
 </project>

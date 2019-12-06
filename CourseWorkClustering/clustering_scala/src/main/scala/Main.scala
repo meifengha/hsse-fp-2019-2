@@ -18,7 +18,7 @@ object Main {
     if (args.isEmpty)
       throw new RuntimeException("Input file was not passed as an argument")
 
-    writeListToFile(args(0), generateListOfPoints(100000, 80))
+    writeListToFile(args(0), generateListOfPoints(1000000, 80))
 
     val frame = new JFrame()
     frame.setDefaultCloseOperation(2)
