@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d0c9d7e-54b6-466d-9b70-b9ab943f63c7" name="Default Changelist" comment="" />
+    <list default="true" id="8d0c9d7e-54b6-466d-9b70-b9ab943f63c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/PointsComponent.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/PointsComponent.scala" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,11 +19,24 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Arthur\IdeaProjects\clustering_scala" />
+        <option value="C:\Users\Arthur\IdeaProjects\clustering_scala\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1UYnt5pHBp14B91T6eCw0w9h3Kc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -123,12 +139,12 @@
     </option>
     <option name="projectSyncType">
       <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
         <entry key="$PROJECT_DIR$/../example" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../forcomp" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../funsets" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../objsets" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../patmat" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
         <entry key="$PROJECT_DIR$/../recfun" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../recfun2" value="PREVIEW" />
       </map>
@@ -146,5 +162,16 @@
       <updated>1575542607742</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

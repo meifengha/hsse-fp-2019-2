@@ -11,7 +11,8 @@ class PointsComponent(private val points: List[Point]) extends JComponent {
     for (it <- points) {
       if (getDistance(it, Clusters.cluster1) < getDistance(it, Clusters.cluster2)) {
         g.setColor(Color.BLUE)
-      } else if ((getDistance(it, Clusters.cluster2) < getDistance(it, Clusters.cluster1)) && (getDistance(it, Clusters.cluster2) < getDistance(it, Clusters.cluster3))) {
+      } else if ((getDistance(it, Clusters.cluster2) < getDistance(it, Clusters.cluster1))
+        && (getDistance(it, Clusters.cluster2) < getDistance(it, Clusters.cluster3))) {
         g.setColor(Color.RED)
       } else if (getDistance(it, Clusters.cluster3) < getDistance(it, Clusters.cluster2)) {
         g.setColor(Color.GREEN)
