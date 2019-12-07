@@ -44,12 +44,12 @@ object Anagrams {
 
   /** Converts a sentence into its character occurrence list. */
   def sentenceOccurrences(s: Sentence): Occurrences = {
-    def sentenceOccurrenceIter(s: Sentence): Occurrences = {
+    def Iter(s: Sentence): Occurrences = {
       if (s.isEmpty) Nil
-      else wordOccurrences(s.head) ++ sentenceOccurrenceIter(s.tail)
+      else wordOccurrences(s.head) ++ Iter(s.tail)
     }
 
-    sentenceOccurrenceIter(s)
+    Iter(s)
       .groupBy(item => item._1)
       .map {
         case (c, lists) => {
