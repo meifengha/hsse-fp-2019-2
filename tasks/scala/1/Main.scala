@@ -30,21 +30,19 @@ object Main {
    * Exercise 2 Parentheses Balancing
    */
   def balance(chars: List[Char]): Boolean = {
-    var count = 0
-
-    for (char <- chars.indices) {
-      if (chars(char).equals('(')) {
-        count += 1
-      } else if (chars(char).equals(')')) {
-        count -= 1
+    def check(chars: List[Char], count: Int): Boolean = {
+      if (chars.isEmpty) {
+        count == 0
+      } else if (chars.head == '(') {
+        check(chars.tail, count + 1)
+      } else if (chars.head == ')') {
+        (count > 0) && check(chars.tail, count - 1)
+      } else {
+        check(chars.tail, count)
       }
     }
 
-    if (count == 0) {
-      return true
-    }
-
-    false
+    check(chars, 0)
   }
 
   /**
