@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_kursovaya" default="compile.module.kursovaya">
+  <dirname property="module.kursovaya.basedir" file="${ant.file.module_kursovaya}"/>
+  
+  <property name="module.jdk.home.kursovaya" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.kursovaya" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.kursovaya" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.kursovaya" value="-encoding UTF-8 -source 10 -target 10 ${compiler.args}"/>
+  
+  <property name="kursovaya.output.dir" value="${module.kursovaya.basedir}/out/production/kursovaya"/>
+  <property name="kursovaya.testoutput.dir" value="${module.kursovaya.basedir}/out/test/kursovaya"/>
+  
+  <path id="kursovaya.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="kursovaya.module.production.classpath">
+    <path refid="${module.jdk.classpath.kursovaya}"/>
+    <path refid="library.org.apache.spark:spark-sql_2.10:1.1.1.classpath"/>
+    
+    <path refid="library.org.apache.polygene.libraries:org.apache.polygene.library.sql:3.0.0.classpath"/>
+    <path refid="library.scala-sdk-2.12.0.classpath"/>
+  </path>
+  
+  <path id="kursovaya.runtime.production.module.classpath">
+    <pathelement location="${kursovaya.output.dir}"/>
+    <path refid="library.org.apache.spark:spark-sql_2.10:1.1.1.classpath"/>
+    
+    <path refid="library.org.apache.polygene.libraries:org.apache.polygene.library.sql:3.0.0.classpath"/>
+    <path refid="library.scala-sdk-2.12.0.classpath"/>
+  </path>
+  
+  <path id="kursovaya.module.classpath">
+    <path refid="${module.jdk.classpath.kursovaya}"/>
+    <pathelement location="${kursovaya.output.dir}"/>
+    <path refid="library.org.apache.spark:spark-sql_2.10:1.1.1.classpath"/>
+    
+    <path refid="library.org.apache.polygene.libraries:org.apache.polygene.library.sql:3.0.0.classpath"/>
+    <path refid="library.scala-sdk-2.12.0.classpath"/>
+  </path>
+  
+  <path id="kursovaya.runtime.module.classpath">
+    <pathelement location="${kursovaya.testoutput.dir}"/>
+    <pathelement location="${kursovaya.output.dir}"/>
+    <path refid="library.org.apache.spark:spark-sql_2.10:1.1.1.classpath"/>
+    
+    <path refid="library.org.apache.polygene.libraries:org.apache.polygene.library.sql:3.0.0.classpath"/>
+    <path refid="library.scala-sdk-2.12.0.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.kursovaya">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.kursovaya">
+    <patternset refid="excluded.from.module.kursovaya"/>
+  </patternset>
+  
+  <path id="kursovaya.module.sourcepath">
+    <dirset dir="${module.kursovaya.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.kursovaya" depends="compile.module.kursovaya.production,compile.module.kursovaya.tests" description="Compile module kursovaya"/>
+  
+  <target name="compile.module.kursovaya.production" depends="register.custom.compilers" description="Compile module kursovaya; production classes">
+    <mkdir dir="${kursovaya.output.dir}"/>
+    <javac2 destdir="${kursovaya.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.kursovaya}/javac">
+      <compilerarg line="${compiler.args.kursovaya}"/>
+      <bootclasspath refid="kursovaya.module.bootclasspath"/>
+      <classpath refid="kursovaya.module.production.classpath"/>
+      <src refid="kursovaya.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.kursovaya"/>
+    </javac2>
+    
+    <copy todir="${kursovaya.output.dir}">
+      <fileset dir="${module.kursovaya.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.kursovaya.tests" depends="register.custom.compilers,compile.module.kursovaya.production" description="compile module kursovaya; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.kursovaya" description="cleanup module">
+    <delete dir="${kursovaya.output.dir}"/>
+    <delete dir="${kursovaya.testoutput.dir}"/>
+  </target>
+</project>
