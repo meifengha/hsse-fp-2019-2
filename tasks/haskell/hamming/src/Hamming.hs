@@ -1,4 +1,10 @@
-module Hamming (distance) where
+main :: IO ()
+main = do
+	s <- getLine
+	t <- getLine
 
-distance :: String -> String -> Maybe Int
-distance xs ys = error "Implementation is lost..."
+	putStrLn $ show
+		 $ foldl (\diff (si,ti) ->
+			  case si /= ti of
+			  	True -> diff + 1
+				_    -> diff) 0 $ zip s t
