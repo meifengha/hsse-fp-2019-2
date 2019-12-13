@@ -4,4 +4,4 @@ Calculator on Scala
 
 Expression    | Result
 ------------- | -------------
-![picture](img/calcExpr.png)  | ![picture](img/calcRes.png)
+![picture](image/calcExpr.png)  | ![picture](image/calcRes.png)
