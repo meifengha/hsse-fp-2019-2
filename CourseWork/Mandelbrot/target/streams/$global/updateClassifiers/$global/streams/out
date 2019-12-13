@@ -1,0 +1,71 @@
+[debug] :: resolving dependencies :: default#untitled3$sources;0.1
+[debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool]
+[debug] 	validate = true
+[debug] 	refresh = false
+[debug] resolving dependencies for configuration 'compile'
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [compile]
+[debug] resolving dependencies for configuration 'runtime'
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [runtime]
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [compile]
+[debug] resolving dependencies for configuration 'test'
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [test]
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [runtime]
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [compile]
+[debug] resolving dependencies for configuration 'provided'
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [provided]
+[debug] resolving dependencies for configuration 'optional'
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [optional]
+[debug] resolving dependencies for configuration 'compile-internal'
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [compile-internal]
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [compile]
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [optional]
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [provided]
+[debug] resolving dependencies for configuration 'runtime-internal'
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [runtime-internal]
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [runtime]
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [compile]
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [optional]
+[debug] resolving dependencies for configuration 'test-internal'
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [test-internal]
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [test]
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [runtime]
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [compile]
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [optional]
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [provided]
+[debug] resolving dependencies for configuration 'plugin'
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [plugin]
+[debug] resolving dependencies for configuration 'pom'
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [pom]
+[debug] resolving dependencies for configuration 'scala-tool'
+[debug] == resolving dependencies for default#untitled3$sources;0.1 [scala-tool]
+[debug] == resolving dependencies default#untitled3$sources;0.1->org.fusesource.jansi#jansi;1.12 [scala-tool->master(*)]
+[debug] sbt-chain: Checking cache for: dependency: org.fusesource.jansi#jansi;1.12 {scala-tool=[master(*), compile, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.12
+[debug] 	found org.fusesource.jansi#jansi;1.12 in sbt-chain
+[debug] == resolving dependencies default#untitled3$sources;0.1->org.fusesource.jansi#jansi;1.12 [scala-tool->compile]
+[debug] == resolving dependencies default#untitled3$sources;0.1->org.fusesource.jansi#jansi;1.12 [scala-tool->compile(*)]
+[debug] == resolving dependencies default#untitled3$sources;0.1->org.fusesource.jansi#jansi;1.12 [scala-tool->master]
+[debug] == resolving dependencies default#untitled3$sources;0.1->jline#jline;2.14.6 [scala-tool->master(*)]
+[debug] sbt-chain: Checking cache for: dependency: jline#jline;2.14.6 {scala-tool=[master(*), compile, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: jline#jline;2.14.6
+[debug] 	found jline#jline;2.14.6 in sbt-chain
+[debug] == resolving dependencies default#untitled3$sources;0.1->jline#jline;2.14.6 [scala-tool->compile]
+[debug] == resolving dependencies default#untitled3$sources;0.1->jline#jline;2.14.6 [scala-tool->compile(*)]
+[debug] == resolving dependencies default#untitled3$sources;0.1->jline#jline;2.14.6 [scala-tool->master]
+[debug] 	resolved ivy file produced in cache
+[debug] :: downloading artifacts ::
+[debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar(src)
+[debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.12!jansi.jar(src)
+[debug] :: resolution report :: resolve 72ms :: artifacts dl 4ms
+[debug] 	report for default#untitled3$sources;0.1 compile produced in C:\Users\aleks\Downloads\Mandelbrot-master\untitled3\target\scala-2.12\resolution-cache\reports\default-untitled3$sources-compile.xml
+[debug] 	report for default#untitled3$sources;0.1 runtime produced in C:\Users\aleks\Downloads\Mandelbrot-master\untitled3\target\scala-2.12\resolution-cache\reports\default-untitled3$sources-runtime.xml
+[debug] 	report for default#untitled3$sources;0.1 test produced in C:\Users\aleks\Downloads\Mandelbrot-master\untitled3\target\scala-2.12\resolution-cache\reports\default-untitled3$sources-test.xml
+[debug] 	report for default#untitled3$sources;0.1 provided produced in C:\Users\aleks\Downloads\Mandelbrot-master\untitled3\target\scala-2.12\resolution-cache\reports\default-untitled3$sources-provided.xml
+[debug] 	report for default#untitled3$sources;0.1 optional produced in C:\Users\aleks\Downloads\Mandelbrot-master\untitled3\target\scala-2.12\resolution-cache\reports\default-untitled3$sources-optional.xml
+[debug] 	report for default#untitled3$sources;0.1 compile-internal produced in C:\Users\aleks\Downloads\Mandelbrot-master\untitled3\target\scala-2.12\resolution-cache\reports\default-untitled3$sources-compile-internal.xml
+[debug] 	report for default#untitled3$sources;0.1 runtime-internal produced in C:\Users\aleks\Downloads\Mandelbrot-master\untitled3\target\scala-2.12\resolution-cache\reports\default-untitled3$sources-runtime-internal.xml
+[debug] 	report for default#untitled3$sources;0.1 test-internal produced in C:\Users\aleks\Downloads\Mandelbrot-master\untitled3\target\scala-2.12\resolution-cache\reports\default-untitled3$sources-test-internal.xml
+[debug] 	report for default#untitled3$sources;0.1 plugin produced in C:\Users\aleks\Downloads\Mandelbrot-master\untitled3\target\scala-2.12\resolution-cache\reports\default-untitled3$sources-plugin.xml
+[debug] 	report for default#untitled3$sources;0.1 pom produced in C:\Users\aleks\Downloads\Mandelbrot-master\untitled3\target\scala-2.12\resolution-cache\reports\default-untitled3$sources-pom.xml
+[debug] 	report for default#untitled3$sources;0.1 scala-tool produced in C:\Users\aleks\Downloads\Mandelbrot-master\untitled3\target\scala-2.12\resolution-cache\reports\default-untitled3$sources-scala-tool.xml
+[debug] 	resolve done (72ms resolve - 4ms download)
