@@ -4,8 +4,6 @@ package object forcomp {
   def loadDictionary = {
     val wordstream = Option {
       getClass.getClassLoader.getResourceAsStream(dictionaryPath.mkString("/"))
-    } orElse {
-      common.resourceAsStreamFromSrc(dictionaryPath)
     } getOrElse {
       sys.error("Could not load word list, dictionary file not found")
     }
