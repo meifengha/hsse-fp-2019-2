@@ -12,11 +12,9 @@ class Main extends PApplet {
 
   override def draw() = {
     Writer.write(Generator.generate())
-    val data = Reader.read()
+    val points = Reader.read()
     stroke(random(255), random(255), random(255))
-    data.foreach(p => {
-      point(p._1, p._2)
-    })
+    points.foreach { case (x, y) => point(x,y)}
   }
 }
 
