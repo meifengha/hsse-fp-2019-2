@@ -1,2 +1,7 @@
-# hsse-fp-2019-2
-Functional Programming in HSSE 2019-2
+# **Calculator**
+Calculator on Scala
+
+
+Expression    | Result
+------------- | -------------
+![picture](img/calcExpr.png)  | ![picture](img/calcRes.png)
