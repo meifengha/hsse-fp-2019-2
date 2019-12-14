@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calculator2</string>
+
+    <string name="no_entered_text_toast">Введите число</string>
+</resources>
