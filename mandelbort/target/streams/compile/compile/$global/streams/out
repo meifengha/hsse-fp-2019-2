@@ -1,0 +1,35 @@
+[debug] 
+[debug] Initial source changes: 
+[debug] 	removed:Set()
+[debug] 	added: Set()
+[debug] 	modified: Set(C:\Users\user\course-work\src\main\scala\Main.scala)
+[debug] Removed products: Set()
+[debug] External API changes: API Changes: Set()
+[debug] Modified binary dependencies: Set()
+[debug] Initial directly invalidated sources: Set(C:\Users\user\course-work\src\main\scala\Main.scala)
+[debug] 
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set()
+[debug] 	binary dep: Set()
+[debug] 	external source: Set()
+[debug] All initially invalidated sources: Set(C:\Users\user\course-work\src\main\scala\Main.scala)
+[info] Compiling 1 Scala source to C:\Users\user\course-work\target\scala-2.12\classes...
+[debug] Getting compiler-interface from component compiler for Scala 2.12.3
+[debug] Getting compiler-interface from component compiler for Scala 2.12.3
+[debug] Running cached compiler 357c9b06, interfacing (CompilerInterface) with Scala compiler version 2.12.3
+[debug] Calling Scala compiler with arguments  (CompilerInterface):
+[debug] 	-bootclasspath
+[debug] 	C:\Program Files\Java\jre1.8.0_211\lib\resources.jar;C:\Program Files\Java\jre1.8.0_211\lib\rt.jar;C:\Program Files\Java\jre1.8.0_211\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_211\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_211\lib\jce.jar;C:\Program Files\Java\jre1.8.0_211\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_211\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_211\classes;C:\Users\user\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.3.jar
+[debug] 	-classpath
+[debug] 	C:\Users\user\course-work\target\scala-2.12\classes;C:\Users\user\.ivy2\cache\com.github.wookietreiber\scala-chart_2.12\jars\scala-chart_2.12-0.5.1.jar;C:\Users\user\.ivy2\cache\org.jfree\jfreechart\jars\jfreechart-1.0.19.jar;C:\Users\user\.ivy2\cache\org.jfree\jcommon\jars\jcommon-1.0.23.jar;C:\Users\user\.ivy2\cache\org.scala-lang.modules\scala-swing_2.12\bundles\scala-swing_2.12-2.0.0-M2.jar
+[debug] Scala compilation took 7.932483641 s
+[debug] Invalidating by inheritance (transitively)...
+[debug] Initial set of included nodes: Set(C:\Users\user\course-work\src\main\scala\Main.scala)
+[debug] Invalidated by transitive public inheritance: Set(C:\Users\user\course-work\src\main\scala\Main.scala)
+[debug] Invalidated by direct dependency: Set()
+[debug] New invalidations:
+[debug] 	Set()
+[debug] Initial set of included nodes: Set()
+[debug] Previously invalidated, but (transitively) depend on new invalidations:
+[debug] 	Set()
+[debug] All newly invalidated sources after taking into account (previously) recompiled sources:Set()

@@ -1,0 +1,31 @@
+[debug] 
+[debug] Initial source changes: 
+[debug] 	removed:Set()
+[debug] 	added: Set()
+[debug] 	modified: Set(C:\Users\user\workspace\course-work\src\main\scala\Main.scala)
+[debug] Removed products: Set()
+[debug] External API changes: API Changes: Set()
+[debug] Modified binary dependencies: Set()
+[debug] Initial directly invalidated sources: Set(C:\Users\user\workspace\course-work\src\main\scala\Main.scala)
+[debug] 
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set()
+[debug] 	binary dep: Set()
+[debug] 	external source: Set()
+[debug] All initially invalidated sources: Set(C:\Users\user\workspace\course-work\src\main\scala\Main.scala)
+[debug] Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources
+[info] Compiling 1 Scala source to C:\Users\user\workspace\course-work\src\main\scala\target\scala-2.10\classes...
+[debug] Getting compiler-interface from component compiler for Scala 2.10.4
+[debug] Getting compiler-interface from component compiler for Scala 2.10.4
+[debug] Running cached compiler 2b928dfa, interfacing (CompilerInterface) with Scala compiler version 2.10.4
+[debug] Calling Scala compiler with arguments  (CompilerInterface):
+[debug] 	-bootclasspath
+[debug] 	C:\Program Files\Java\jre1.8.0_211\lib\resources.jar;C:\Program Files\Java\jre1.8.0_211\lib\rt.jar;C:\Program Files\Java\jre1.8.0_211\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_211\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_211\lib\jce.jar;C:\Program Files\Java\jre1.8.0_211\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_211\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_211\classes;C:\Users\user\.sbt\boot\scala-2.10.4\lib\scala-library.jar
+[debug] 	-classpath
+[debug] 	C:\Users\user\workspace\course-work\src\main\scala\target\scala-2.10\classes
+[error] C:\Users\user\workspace\course-work\src\main\scala\Main.scala:3: not found: object scalax
+[error] import scalax.chart.api._
+[error]        ^
+[error] one error found
+[debug] Compilation failed (CompilerInterface)
+[error] (compile:compile) Compilation failed

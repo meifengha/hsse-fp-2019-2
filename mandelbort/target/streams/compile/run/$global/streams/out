@@ -1,0 +1,18 @@
+[info] Running main.Main 
+[debug] Waiting for threads to exit or System.exit to be called.
+[debug]   Classpath:
+[debug] 	C:\Users\user\course-work\target\scala-2.12\classes
+[debug] 	C:\Users\user\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.3.jar
+[debug] 	C:\Users\user\.ivy2\cache\com.github.wookietreiber\scala-chart_2.12\jars\scala-chart_2.12-0.5.1.jar
+[debug] 	C:\Users\user\.ivy2\cache\org.jfree\jfreechart\jars\jfreechart-1.0.19.jar
+[debug] 	C:\Users\user\.ivy2\cache\org.jfree\jcommon\jars\jcommon-1.0.23.jar
+[debug] 	C:\Users\user\.ivy2\cache\org.scala-lang.modules\scala-swing_2.12\bundles\scala-swing_2.12-2.0.0-M2.jar
+[debug] Waiting for thread run-main-0 to terminate.
+[debug] 	Thread run-main-0 exited.
+[debug] Interrupting remaining threads (should be all daemons).
+[debug] Not interrupting system thread Thread[Thread-2,5,system]
+[debug] Not interrupting system thread Thread[AWT-Windows,6,system]
+[debug] Not interrupting system thread Thread[Thread-1,6,system]
+[debug] Not interrupting system thread Thread[Java2D Disposer,10,system]
+[debug] Sandboxed run complete..
+[debug] Exited with code 0
