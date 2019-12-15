@@ -88,7 +88,7 @@ class MainApp extends Application {
     root.getChildren.addAll(canvas, label, line, prediction, clearButton, loadingLabel)
     val scene = new Scene(root, 600, 400)
     primaryStage.setScene(scene)
-    primaryStage.setTitle("Recognise digit")
+    primaryStage.setTitle("Digit recognition")
     primaryStage.show()
 
     Platform.runLater(new Runnable {
