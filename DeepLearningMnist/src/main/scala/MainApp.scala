@@ -23,7 +23,8 @@ import scala.collection.mutable.ArrayBuffer
 
 object MainApp {
   def main(args: Array[String]): Unit = {
-    Application.launch(classOf[MainApp], args: _*)
+    if (args.length != 0 && args(0).equals("--train")) NeuralNetwork.train()
+    else Application.launch(classOf[MainApp], args: _*)
   }
 }
 
