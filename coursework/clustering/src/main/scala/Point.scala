@@ -24,16 +24,18 @@ class PointsComponent(private val points: List[Point]) extends JComponent {
         graphic.setColor(Color.RED)
 
       } else if ((getDistance(point, Clusters.cluster3) < getDistance(point, Clusters.cluster2))
-           && (getDistance(point, Clusters.cluster3) < getDistance(point, Clusters.cluster4))) {
+              && (getDistance(point, Clusters.cluster3) < getDistance(point, Clusters.cluster4))
+              && (getDistance(point, Clusters.cluster3) < getDistance(point, Clusters.cluster1))) {
 
         graphic.setColor(Color.MAGENTA)
 
       } else if ((getDistance(point, Clusters.cluster4) < getDistance(point, Clusters.cluster3))
-             && (getDistance(point, Clusters.cluster4) < getDistance(point, Clusters.cluster2))) {
+             && (getDistance(point, Clusters.cluster4) < getDistance(point, Clusters.cluster2))
+             && (getDistance(point, Clusters.cluster4) < getDistance(point, Clusters.cluster1))) {
 
         graphic.setColor(Color.BLUE)
       }
-      graphic.fillOval(point.x, point.y, 3, 3)
+      graphic.fillOval(point.x, point.y, 2, 2)
     }
   }
 }
