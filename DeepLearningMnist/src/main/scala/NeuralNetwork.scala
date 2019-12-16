@@ -243,13 +243,13 @@ object NeuralNetwork extends{
     trainer.startTrain()
     println(trainer.lossBuffer)
 
-    println(s"The accuracy is ${getAccuracyResult()}")
+    println(s"The accuracy is $getAccuracyResult")
   }
 
   def test(): Unit = {
     loadWeights()
 
-    println(s"The accuracy is ${getAccuracyResult()}")
+    println(s"The accuracy is $getAccuracyResult")
   }
 }
 
