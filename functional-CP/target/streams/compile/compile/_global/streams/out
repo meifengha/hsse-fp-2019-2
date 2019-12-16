@@ -1,0 +1,7 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/andrei/functional-CP/src/main/scala/main.scala:9:25: method until in trait FractionalProxy is deprecated (since 2.12.6): use BigDecimal range instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m      for (real <- -2.0 until 2.0 by 0.001)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/andrei/functional-CP/src/main/scala/main.scala:10:27: method until in trait FractionalProxy is deprecated (since 2.12.6): use BigDecimal range instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m        for (image <- 2.0 until -2.0 by -0.001)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                          ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
