@@ -8,4 +8,3 @@ main = do
     input <- getLine
     putStr "The result: "
     print $ calculate input
-    
