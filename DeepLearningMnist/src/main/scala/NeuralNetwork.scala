@@ -1,8 +1,9 @@
 import java.io.{DataInputStream, DataOutputStream, File, FileInputStream, FileOutputStream}
-import java.util.concurrent.Executors
+import java.util.concurrent.{ExecutorService, Executors}
 
 import org.nd4j.linalg.dataset.DataSet
 
+import scala.collection.mutable
 import scala.concurrent.ExecutionContext
 import scala.util.Random
 
@@ -18,8 +19,8 @@ object NeuralNetwork extends{
   import scala.concurrent.duration.Duration
   import com.thoughtworks.each.Monadic._
 
-  val singleThreadExecutor = Executors.newSingleThreadExecutor()
-  implicit val singleThreadExecutionContext = ExecutionContext.fromExecutor(singleThreadExecutor)
+  val singleThreadExecutor: ExecutorService = Executors.newSingleThreadExecutor()
+  implicit val singleThreadExecutionContext: ExecutionContext = ExecutionContext.fromExecutor(singleThreadExecutor)
 
   import $exec.`https://gist.githubusercontent.com/Rabenda/f06279e648e45bd574dc382abb4c44ac/raw/7bd7a871030988c58524108c5985f71002f82012/INDArrayLearningRate.sc`
   import $exec.`https://gist.github.com/Atry/15b7d9a4c63d95ad3d67e94bf20b4f69/raw/59f7ee4dff0dde3753f560633574265e950edc93/CNN.sc`
@@ -35,7 +36,7 @@ object NeuralNetwork extends{
   import hyperparameters.DoubleLayer
 
   val trainBatchSize = 64
-  val random = Random
+  val random: Random = Random
 
   val NumberOfClasses: Int = 10
   val NumberOfChannels: Int = 1
@@ -54,7 +55,6 @@ object NeuralNetwork extends{
   val Stride: Int = 1
   val PoolSize: Int = 2
 
-  import org.nd4j.linalg.api.buffer.DataBuffer
   import org.nd4j.linalg.factory.Nd4j
 
   object weightsAndBiases {
@@ -109,22 +109,19 @@ object NeuralNetwork extends{
 
   class Trainer(batchSize: Int, numberOfEpochs: Int = 5) {
 
-    import scalaz.std.anyVal._
-    import scalaz.syntax.all._
-
     @volatile
     private var isShuttingDown: Boolean = false
 
-    val lossBuufer = scala.collection.mutable.Buffer.empty[Double]
+    val lossBuffer: mutable.Buffer[Double] = mutable.Buffer.empty[Double]
 
-    def interrupt: Unit = isShuttingDown = true
+    def interrupt(): Unit = isShuttingDown = true
 
-    def startTrain: Unit = {
+    def startTrain(): Unit = {
 
       @monadic[Future]
       def trainTask(next: DataSet, epoch: Int, iteration: Int): Future[Unit] = {
           var loss = lossFunction(next.getFeatures, next.getLabels).train.each
-          lossBuufer += loss
+          lossBuffer += loss
           hyperparameters.logger.info(s"epoch=$epoch iteration=$iteration batchSize=$batchSize loss=$loss")
       }
 
@@ -141,11 +138,11 @@ object NeuralNetwork extends{
       }
 
       hyperparameters.logger.info("Done")
-      saveWeights
+      saveWeights()
     }
   }
 
-  def getAccuracyResult(): String = {
+  def getAccuracyResult: String = {
     def findMaxItemIndex(iNDArray: INDArray): INDArray = {
       Nd4j.argMax(iNDArray, 1)
     }
@@ -155,7 +152,7 @@ object NeuralNetwork extends{
       val scoreIndex = findMaxItemIndex(score)
       val expectResultIndex = findMaxItemIndex(testExpectLabel)
       val accINDArray = scoreIndex.eq(expectResultIndex)
-      (accINDArray.sumT / score.shape()(0))
+      accINDArray.sumT / score.shape()(0)
     }
 
 
@@ -175,7 +172,7 @@ object NeuralNetwork extends{
     s"${accuracy * 100.0}%"
   }
 
-  def saveWeights: Unit = {
+  def saveWeights(): Unit = {
     val cnnWeightStream = new DataOutputStream(new FileOutputStream(new File("data/CnnWeight.bin")))
     val cnnBiasStream = new DataOutputStream(new FileOutputStream(new File("data/CnnBias.bin")))
     val affineWeightStream = new DataOutputStream(new FileOutputStream(new File("data/AffineWeight.bin")))
@@ -199,7 +196,7 @@ object NeuralNetwork extends{
     }
   }
 
-  def loadWeights: Unit = {
+  def loadWeights(): Unit = {
     if (loaded) return
     val cnnWeightStream = new DataInputStream(new FileInputStream(new File("data/CnnWeight.bin")))
     val cnnBiasStream = new DataInputStream(new FileInputStream(new File("data/CnnBias.bin")))
@@ -227,7 +224,7 @@ object NeuralNetwork extends{
   }
 
   def predict(input: INDArray): Int = {
-    loadWeights
+    loadWeights()
     val predictResult = Await.result(myNeuralNetwork(input).predict.toScalaFuture, Duration.Inf)
     Nd4j.argMax(predictResult).getInt(0)
   }
@@ -242,15 +239,15 @@ object NeuralNetwork extends{
     affineLastWeight = INDArrayWeight(Nd4j.randn(Array(HiddenDim, NumberOfClasses)) * WeightScale)
     affineLastBias = INDArrayWeight(Nd4j.zeros(NumberOfClasses))
 
-    val trainer = new Trainer(trainBatchSize, 1)
-    trainer.startTrain
-    println(trainer.lossBuufer)
+    val trainer = new Trainer(trainBatchSize, 10)
+    trainer.startTrain()
+    println(trainer.lossBuffer)
 
     println(s"The accuracy is ${getAccuracyResult()}")
   }
 
   def test(): Unit = {
-    loadWeights
+    loadWeights()
 
     println(s"The accuracy is ${getAccuracyResult()}")
   }
