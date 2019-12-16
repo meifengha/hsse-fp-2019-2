@@ -1,0 +1,17 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/dimka9910/scala/hsse-fp-2019-2/CurseWork/target/scala-2.11/main_2.11-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dimka9910/scala/hsse-fp-2019-2/CurseWork/target/scala-2.11/classes[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dimka9910/scala/hsse-fp-2019-2/CurseWork/target/scala-2.11/classes/main[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main/Complex.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dimka9910/scala/hsse-fp-2019-2/CurseWork/target/scala-2.11/classes/main/Complex.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main/Main$$anonfun$mandelbort$1$$anonfun$apply$mcVD$sp$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dimka9910/scala/hsse-fp-2019-2/CurseWork/target/scala-2.11/classes/main/Main$$anonfun$mandelbort$1$$anonfun$apply$mcVD$sp$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main/Main$$anonfun$mandelbort$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dimka9910/scala/hsse-fp-2019-2/CurseWork/target/scala-2.11/classes/main/Main$$anonfun$mandelbort$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dimka9910/scala/hsse-fp-2019-2/CurseWork/target/scala-2.11/classes/main/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/dimka9910/scala/hsse-fp-2019-2/CurseWork/target/scala-2.11/classes/main/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
