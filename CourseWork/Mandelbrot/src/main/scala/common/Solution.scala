@@ -22,7 +22,7 @@ object Solution {
 
         val iterations = Complex.divergentIterations(c)
 
-        out.setRGB(x, y, Color.HSBtoRGB(iterations / 256.0f, 1, iterations / (iterations + 8f)))
+        out.setRGB(x, y, Color.HSBtoRGB(iterations / 130.0f, 156, iterations / (iterations + 8f)))
       }
     }
 
