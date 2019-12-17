@@ -2,7 +2,7 @@ package forcomp
 
 import common._
 
-object Anagrams {
+object Anagrams{
 
   /** A word is simply a `String`. */
   type Word = String
@@ -80,12 +80,13 @@ object Anagrams {
    *  Note that the order of the occurrence list subsets does not matter -- the subsets
    *  in the example above could have been displayed in some other order.
    */
+   
   def combinations(occurrences: Occurrences): List[Occurrences] = occurrences match {
       case List() => List()
       case (c, times) :: tail => {
         for {
             first <- List(1 to times)
-            rest <- combinations(tail)
+            rest  <- combinations(tail)
         } yield (c, first) :: rest
       } ::: combinations(tail)
     }
@@ -100,6 +101,7 @@ object Anagrams {
    *  Note: the resulting value is an occurrence - meaning it is sorted
    *  and has no zero-entries.
    */
+   
   def subtract(x: Occurrences, y: Occurrences): Occurrences = {
     val n = mutable.ListBuffer(x: _*)
     y.foreach {
@@ -154,14 +156,15 @@ object Anagrams {
    *
    *  Note: There is only one anagram of an empty sentence.
    */
+   
   def sentenceAnagrams(sentence: Sentence): List[Sentence] = {
     def anagrams(occurrences: Occurrences): List[Sentence] = occurrences match {
       case List() => List(List())
       case _ => {
         for {
-          combination <- combinations(occurrences) if dictionaryByOccurrences.contains(combination)
-          word <- dictionaryByOccurrences(combination)
-          occurrencesRemainder <- anagrams(subtract(occurrences, combination))
+            combination <- combinations(occurrences) if dictionaryByOccurrences.contains(combination)
+            word <- dictionaryByOccurrences(combination)
+            occurrencesRemainder <- anagrams(subtract(occurrences, combination))
         } yield word :: occurrencesRemainder
       }
     }
