@@ -1,4 +1,4 @@
-name := "new"
+name := "courseWorkScala"
 
 version := "0.1"
 
