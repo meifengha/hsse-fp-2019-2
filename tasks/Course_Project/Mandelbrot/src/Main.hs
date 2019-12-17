@@ -35,7 +35,7 @@ mandelbrot (Counter maxIter) (Dimensions (Width w) (Height h)) x y =
     let maxDimension = max w h
         Coordinate rx ry = Coordinate (x - w `div` 2) (y - h `div` 2)
         Point nx ny = Point (fromIntegral rx / fromIntegral maxDimension) (fromIntegral ry / fromIntegral maxDimension)
-        pixelValue = genMandelbrot (Counter 0) (Counter maxIter) (Point 0.0 0.0) (Point (nx * 3.0) (ny * 3.0)) --Scale point to the range [-3, 3]
+        pixelValue = genMandelbrot (Counter 0) (Counter maxIter) (Point 0.0 0.0) (Point (nx * 3.0) (ny * 3.0))
     in PixelRGB8 0 0 (fromIntegral (min pixelValue 255))
 
 main = let imageWidth = 1920
