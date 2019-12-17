@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="20242e63-9fc3-40e4-bbf0-a87d7663f99e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="new" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="new" type="f1a62948:ProjectNode" />
+                <item name="new" type="2d1252cf:ModuleNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Worksheet" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1V7R8atdVGAZvTRTQWz0JO0yT3O" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="new" />
+      <option name="PROGRAM_PARAMETERS" value="input.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="new" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="javaOptions" value="-Djline.terminal=NONE" />
+      <option name="myConsoleArgs" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Scala REPL.Scala REPL" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Scala REPL.Scala REPL" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="new" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="new [file:/C:/Users/Mary/IdeaProjects/new/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="new-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="3153203978078" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="1788669046" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="882899147" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20242e63-9fc3-40e4-bbf0-a87d7663f99e" name="Default Changelist" comment="" />
+      <created>1576601989027</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576601989027</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="22" y="54" key="#Custom_Plugin_Repositories" timestamp="1576602631162">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="22" y="54" key="#Custom_Plugin_Repositories/0.0.1536.824@0.0.1536.824" timestamp="1576602631162" />
+    <state x="22" y="54" key="#HTTP_Proxy" timestamp="1576602638828">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="22" y="54" key="#HTTP_Proxy/0.0.1536.824@0.0.1536.824" timestamp="1576602638828" />
+    <state x="22" y="54" key="#Plugins" timestamp="1576602743828">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="22" y="54" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1576602743828" />
+    <state x="22" y="54" key="#Project_Structure" timestamp="1576603025253">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="22" y="54" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1576603025253" />
+    <state x="0" y="51" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576603511285">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="51" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1576603511285" />
+    <state x="154" y="85" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1576602764853">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="154" y="85" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1576602764853" />
+    <state width="801" height="192" key="GridCell.Tab.0.bottom" timestamp="1576603963109">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="801" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576603963109" />
+    <state width="801" height="192" key="GridCell.Tab.0.center" timestamp="1576603963109">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="801" height="192" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576603963109" />
+    <state width="801" height="192" key="GridCell.Tab.0.left" timestamp="1576603963109">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="801" height="192" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576603963109" />
+    <state width="801" height="192" key="GridCell.Tab.0.right" timestamp="1576603963109">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="801" height="192" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576603963109" />
+    <state x="0" y="0" key="SettingsEditor" timestamp="1576603015595">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1576603015595" />
+    <state x="126" y="220" key="com.intellij.ide.util.TipDialog" timestamp="1576602297853">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="126" y="220" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1576602297853" />
+    <state x="0" y="120" key="new project wizard" timestamp="1576603098041">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="120" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1576603098041" />
+    <state x="92" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1576603509280">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="92" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1576603509280" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/new$Main.ic" NAME="Main Coverage Results" MODIFIED="1576603313739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
