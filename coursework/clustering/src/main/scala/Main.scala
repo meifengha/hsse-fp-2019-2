@@ -39,7 +39,7 @@ object Main {
       (Random.nextGaussian() * radius).toInt + Clusters.cluster1.y)
     case b if size / 4 to size * 2 / 4 contains b => Point((Random.nextGaussian() * radius).toInt + Clusters.cluster2.x,
       (Random.nextGaussian() * radius).toInt + Clusters.cluster2.y)
-    case c if size / 4 to size * 3 / 4 contains c  => Point((Random.nextGaussian() * radius).toInt + Clusters.cluster3.x,
+    case c if  size / 2 to size * 3 / 4 contains c  => Point((Random.nextGaussian() * radius).toInt + Clusters.cluster3.x,
       (Random.nextGaussian() * radius).toInt + Clusters.cluster3.y)
     case _ => Point((Random.nextGaussian() * radius).toInt + Clusters.cluster4.x,
       (Random.nextGaussian() * radius).toInt + Clusters.cluster4.y)
