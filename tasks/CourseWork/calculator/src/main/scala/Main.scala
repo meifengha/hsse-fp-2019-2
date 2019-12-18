@@ -67,7 +67,7 @@ object Main extends JFXApp {
             text.text.value = ""
           }
           text.text = text.text.value + buttonNumber
-          var addSpace : Boolean = !buttonNumber.charAt(0).isDigit && !buttonNumber.equals(".") //&& !buttonNumber.equals("(") && !buttonNumber.equals(")")
+          var addSpace : Boolean = !buttonNumber.charAt(0).isDigit && !buttonNumber.equals(".") 
           if (addSpace) {
             expression = expression + " " + buttonNumber + " "
           } else {
@@ -192,7 +192,6 @@ object Main extends JFXApp {
       pane.add(button1,3,2)
       pane.add(startGroup,4,2)
       pane.add(endGroup,5,2)
-
 
 
       //#4 row
