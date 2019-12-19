@@ -1,13 +1,34 @@
-import Data.List
+import Control.Applicative ((<$>), (<*>))
 
-main = do
-  z <- getLine
-  putStrLn . show .calcRPN . read $ z
+type Operator = Double -> Double -> Double
+type Entry = (String, Operator)
+type Register = [Entry]
 
+modulu :: Double -> Double -> Double
+modulu a b = fromIntegral $ mod (round a) (round b)
 
-calcRPN :: (Num a, Read a) => [Char] -> a
-calcRPN = head . foldl rpn [] . words
-  where rpn (x:y:xs) "+" = (x + y) : xs  
-        rpn (x:y:xs) "*" = (x * y) : xs
-        rpn (x:y:xs) "-" = (x - y) : xs
-        rpn xs nc = read nc : xs
+operatorRegister :: Register
+operatorRegister = [
+                ("-", (-)),
+                ("+", (+)),
+                ("/", (/)),
+                ("*", (*)),
+                ("%", modulu)
+            ]
+            
+main = print $ calculate "5 * 2 + 5 % 2"
+            
+calculate :: String -> Maybe Double
+calculate = eval operatorRegister . words
+            
+eval :: Register -> [String] -> Maybe Double
+eval [] _ = Nothing -- No operator found.
+eval _ [] = Nothing -- If a operator don't have anything to operate on.
+eval _ [number] = Just $ read number
+eval ((operator, function):rest) unparsed =
+    case span (/=operator) unparsed of
+        (_, []) -> eval rest unparsed
+        (beforeOperator, afterOperator) -> 
+            function
+                <$> (eval operatorRegister beforeOperator)
+                <*> (eval operatorRegister $ drop 1 afterOperator)
