@@ -1,12 +1,34 @@
-data Token = PlusToken | IntToken Int deriving (Show)
+import Control.Applicative ((<$>), (<*>))
 
-buildToken [] = []
-buildToken value = [IntToken (read value::Int)]
+type Operator = Double -> Double -> Double
+type Entry = (String, Operator)
+type Register = [Entry]
 
-tokenize :: [Char] -> [Token]
-tokenize expr = let (a, b) = foldr breakToken ([], []) expr in (buildToken a) ++ b
-      where
-        breakToken '+' (current, output) = ([], PlusToken : ((buildToken current) ++ output))
-        breakToken num (current, output) = (num:current, output)
+modulu :: Double -> Double -> Double
+modulu a b = fromIntegral $ mod (round a) (round b)
 
-main = putStrLn "Enter expression"
+operatorRegister :: Register
+operatorRegister = [
+                ("-", (-)),
+                ("+", (+)),
+                ("/", (/)),
+                ("*", (*)),
+                ("%", modulu)
+            ]
+            
+main = print $ calculate "3 * 2 + 5 % 2"
+            
+calculate :: String -> Maybe Double
+calculate = eval operatorRegister . words
+            
+eval :: Register -> [String] -> Maybe Double
+eval [] _ = Nothing -- No operator found.
+eval _ [] = Nothing -- If a operator don't have anything to operate on.
+eval _ [number] = Just $ read number
+eval ((operator, function):rest) unparsed =
+    case span (/=operator) unparsed of
+        (_, []) -> eval rest unparsed
+        (beforeOperator, afterOperator) -> 
+            function
+                <$> (eval operatorRegister beforeOperator)
+                <*> (eval operatorRegister $ drop 1 afterOperator)
