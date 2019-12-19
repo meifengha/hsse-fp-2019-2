@@ -22,8 +22,8 @@ calculate :: String -> Maybe Double
 calculate = eval operatorRegister . words
             
 eval :: Register -> [String] -> Maybe Double
-eval [] _ = Nothing -- No operator found.
-eval _ [] = Nothing -- If a operator don't have anything to operate on.
+eval [] _ = Nothing 
+eval _ [] = Nothing 
 eval _ [number] = Just $ read number
 eval ((operator, function):rest) unparsed =
     case span (/=operator) unparsed of
