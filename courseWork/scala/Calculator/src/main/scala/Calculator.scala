@@ -4,18 +4,27 @@ import scala.util.{Failure, Success, Try}
 object Calculator {
 
   def calculate(operands: ListBuffer[String], operators: ListBuffer[Char]): String = {
-    for ((x, i) <- operators.zipWithIndex) {
+    var i = 0
+    operators.foreach(x => {
       if (x.equals('*') || x.equals('/')) {
-        operands.insert(i, count(operands.apply(i), operands.apply(i + 1), x))
+        operands.update(i, count(operands.apply(i), operands.apply(i + 1), x))
         operands.remove(i + 1)
         operators.remove(i)
+        i -= 1
       }
-    }
-    for ((x, i) <- operators.zipWithIndex) {
-      operands.insert(i, count(operands.apply(i), operands.apply(i + 1), x))
-      operands.remove(i + 1)
-      operators.remove(i)
-    }
+      i += 1
+    })
+
+    i = 0
+    operators.foreach(x => {
+      if (x.equals('+') || x.equals('-')) {
+        operands.update(i, count(operands.apply(i), operands.apply(i + 1), x))
+        operands.remove(i + 1)
+        operators.remove(i)
+        i -= 1
+      }
+      i += 1
+    })
 
     operands.head
   }
