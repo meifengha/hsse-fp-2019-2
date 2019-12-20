@@ -1,7 +1,7 @@
 module Calculator where
 import Data.List
 import Data.Char
-calculator3 :: String -> Float
+calculator :: String -> Float
 count :: Float -> String -> String -> Float
 helper :: Float -> String -> [String] -> Float
 
