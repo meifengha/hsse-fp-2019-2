@@ -15,6 +15,7 @@ def multiply(num1, num2):
 # Function to divide two numbers 
 def divide(num1, num2): 
     return num1 / num2 
+
   
 print("Please select operation -\n" 
         "1. Add\n" 
@@ -38,11 +39,16 @@ elif select == '2':
                     subtract(number_1, number_2)) 
   
 elif select == '3': 
-    print(number_1, "*", number_2, "=", 
-                    multiply(number_1, number_2)) 
+     print(number_1, "*", number_2, "=", 
+                    multiply(number_1, number_2))
+     
   
 elif select == '4': 
     print(number_1, "/", number_2, "=", 
-                    divide(number_1, number_2)) 
+                    divide(number_1, number_2))
+
 else: 
-    print("Invalid input") 
+    print("Invalid input")
+    
+input('Press ENTER to exit')
+
