@@ -70,7 +70,6 @@ class MainApp extends Application {
         val nbi = new BufferedImage(28, 28, BufferedImage.TYPE_INT_RGB)
         nbi.createGraphics().drawImage(bi, 0, 0, java.awt.Color.WHITE, null)
         prediction.setText(NeuralNetwork.predict(Nd4j.create(preProcess(nbi, 28))).toString)
-
       }
     })
 
