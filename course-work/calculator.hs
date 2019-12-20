@@ -1,16 +1,17 @@
-module Calculator where
+module Calculator3 where
 import Data.List
 import Data.Char
-calculator2 :: String -> Int
-count :: Int -> String -> String -> Int
-helper :: Int -> String -> [String] -> Int
+calculator3 :: String -> Float
+count :: Float -> String -> String -> Float
+helper :: Float -> String -> [String] -> Float
 
-count a b "+" =  a + read b :: Int
-count a b "-" =  a - read b :: Int
-count a b "*" =  a * read b :: Int
-count a b operation = error " not permitted"
+count a b "+" = a + read b :: Float
+count a b "-" = a - read b :: Float
+count a b "*" = a * read b :: Float
+count a b "/" = a / read b :: Float
+count a b operation = error "Operation not permitted"
 
 helper res op tokens | (length tokens == 1) = count res (head tokens) op
                      | otherwise = helper (count res (head (tokens)) op) (head (tail tokens)) (tail (tail tokens));
 
-calculator expr = helper 0 "+" (words expr)
+calculator3 expr = helper 0 "+" (words expr)
