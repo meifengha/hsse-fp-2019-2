@@ -1,12 +1,11 @@
-data Token = PlusToken | IntToken Int deriving (Show)
+module Main where
 
-buildToken [] = []
-buildToken value = [IntToken (read value::Int)]
+import System.Environment (getArgs)
+import Calculator
 
-tokenize :: [Char] -> [Token]
-tokenize expr = let (a, b) = foldr breakToken ([], []) expr in (buildToken a) ++ b
-      where
-        breakToken '+' (current, output) = ([], PlusToken : ((buildToken current) ++ output))
-        breakToken num (current, output) = (num:current, output)
-
-main = putStrLn "Enter expression"
+main :: IO ()
+main = do
+  args <- getArgs
+  case calculate (unwords args) of
+    Nothing -> putStrLn "Error"
+    Just val -> print val
