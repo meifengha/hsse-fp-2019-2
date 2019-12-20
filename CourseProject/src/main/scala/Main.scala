@@ -1,3 +1,4 @@
+import scala.io.StdIn.{readChar} 
 object Main {
   def main(args: Array[String]) {
     val wordlist = new Wordlist
@@ -11,7 +12,7 @@ object Main {
       println(game)
 
       print("Next guess (Ctrl-D to quit): ")
-      val ich = Console.in.read
+      val ich = readChar() 
       isOver = (ich == 4)
       println
 
