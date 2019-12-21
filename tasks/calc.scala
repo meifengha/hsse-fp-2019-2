@@ -253,9 +253,15 @@ object Calc {
         catch { case _ : Throwable => println("Ошибка чтения файла "+args(1))}
       } else expr = args(0)
       if (expr!="") {
+        println("got expression:  ")
+        println(expr)
         calculate(expr)
         if (isError) println(errorStr)
-        else println(result)
+        else
+        {
+          println("result:  ")
+          println(result)
+        }
       }
     }
     else println("Отсутствуют аргументы: expression или -f filename")
