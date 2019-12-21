@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0m/home/vera/m2/mandelbrot/src/main/scala/Main.scala:34:31: missing argument list for method apply in class GenericCompanion[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `apply _` or `apply(_)` instead of `apply`.[0m
+[0m[[0m[31merror[0m] [0m[0m    var container = ListBuffer[(Double, Double)][0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
