@@ -51,9 +51,9 @@ p +++ q =  p `mplus` q
 
 p :: Parser (Char, Char)
 p = do x <- item
-       item
-       y <- item
-       return (x,y)
+        item
+        y <- item
+        return (x,y)
 
 sat :: (Char -> Bool) -> Parser Char
 sat p = do x <- item
