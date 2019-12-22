@@ -1,0 +1,11 @@
+[debug] Packaging D:\Poly\2course\func\CW\target\scala-2.13\cw_2.13-0.1.jar ...
+[debug] Input file mappings:
+[debug] 	
+[debug] 	  D:\Poly\2course\func\CW\target\scala-2.13\classes
+[debug] 	Main$.class
+[debug] 	  D:\Poly\2course\func\CW\target\scala-2.13\classes\Main$.class
+[debug] 	Main$Complex.class
+[debug] 	  D:\Poly\2course\func\CW\target\scala-2.13\classes\Main$Complex.class
+[debug] 	Main.class
+[debug] 	  D:\Poly\2course\func\CW\target\scala-2.13\classes\Main.class
+[debug] Done packaging.

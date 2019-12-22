@@ -1,0 +1,28 @@
+[debug] 
+[debug] Initial source changes: 
+[debug] 	removed:Set()
+[debug] 	added: Set()
+[debug] 	modified: Set(D:\Poly\2course\func\CW\src\main\scala\Main.scala)
+[debug] Invalidated products: Set()
+[debug] External API changes: API Changes: Set()
+[debug] Modified binary dependencies: Set()
+[debug] Initial directly invalidated classes: Set(Main, Main.Complex)
+[debug] 
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set()
+[debug] 	binary dep: Set()
+[debug] 	external source: Set()
+[debug] All sources are invalidated.
+[debug] Initial set of included nodes: Main, Main.Complex
+[debug] Recompiling all sources: number of invalidated sources > 50.0% of all sources
+[info] Compiling 1 Scala source to D:\Poly\2course\func\CW\target\scala-2.13\classes ...
+[debug] Getting org.scala-sbt:compiler-bridge_2.13:1.3.1:compile for Scala 2.13.1
+[debug] Getting org.scala-sbt:compiler-bridge_2.13:1.3.1:compile for Scala 2.13.1
+[debug] [zinc] Running cached compiler 25287781 for Scala compiler version 2.13.1
+[debug] [zinc] The Scala compiler is invoked with:
+[debug] 	-bootclasspath
+[debug] 	C:\Users\prota\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.1\scala-library-2.13.1.jar
+[debug] 	-classpath
+[debug] 	D:\Poly\2course\func\CW\target\scala-2.13\classes
+[debug] Scala compilation took 3.2207175 s
+[info] Done compiling.

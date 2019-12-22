@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b6b69565-5c59-4838-ba9f-5d9a3fc5047a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1VIlTZH5amgwBjOsUuBHYSZOoSI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../funcprog/hsse-fp-2019-2-3530904-80002_Ilya-Gusarov/hsse-fp-2019-2-3530904-80002_Ilya-Gusarov/tasks/course_work" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="CW" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="CW" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="cw [file:/D:/Poly/2course/func/CW/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="CW-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="3153896996776" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="3405448499" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="882899147" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+        <entry key="$PROJECT_DIR$/../../funcprog/Scala/11/recfun" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../funcprog/Scala/forcomp" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../funcprog/Scala/funsets" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../funcprog/Scala/objsets" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../funcprog/Scala/patmat" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../funcprog/hsse-fp-2019-2-3530904-80002_Ilya-Gusarov/hsse-fp-2019-2-3530904-80002_Ilya-Gusarov/tasks/course_work" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b6b69565-5c59-4838-ba9f-5d9a3fc5047a" name="Default Changelist" comment="" />
+      <created>1576948498339</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576948498339</updated>
+      <workItem from="1576948501256" duration="684000" />
+      <workItem from="1576950275710" duration="642000" />
+      <workItem from="1577010927503" duration="10079000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1577010998282">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1577010998282" />
+    <state x="724" y="434" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1577011497699">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="724" y="434" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577011497699" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1577021714165">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577021714165" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1577023041787">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577023041787" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1577023041787">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577023041787" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1577023041787">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577023041787" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1577023041787">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577023041787" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1577021773777">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577021773777" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1577021773777">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577021773777" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1577021773777">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577021773777" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1577021773777">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577021773777" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1577010980228">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577010980228" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1577016084318">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1577016084318" />
+    <state x="623" y="225" key="search.everywhere.popup" timestamp="1577011824138">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1577011824138" />
+  </component>
+</project>

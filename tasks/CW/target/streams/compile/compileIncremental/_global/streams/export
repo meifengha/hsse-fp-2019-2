@@ -1,0 +1,1 @@
+scalac -bootclasspath C:\Users\prota\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.1\scala-library-2.13.1.jar -classpath D:\Poly\2course\func\CW\target\scala-2.13\classes D:\Poly\2course\func\CW\src\main\scala\Main.scala
