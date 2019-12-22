@@ -10,16 +10,21 @@ object Calculator extends App {
     println("Enter an expression or press q to quit")
 
     val expr = readLine()
-    println(expr match {
-      case reg(_, _) =>
-        "result = " + calculate(("\\d+".r findAllIn expr).map(_.toInt).toList,
-          ("[+-/*]".r findAllIn expr).toList)
-      case "q" => {
-        cond = false
-        "----------------------------------"
-      }
-      case _ => "error input"
-    })
+    try {
+      println(expr match {
+        case reg(_, _) =>
+          "result = " + calculate(("\\d+".r findAllIn expr).map(_.toInt).toList,
+            ("[+-/*]".r findAllIn expr).toList)
+        case "q" => {
+          cond = false
+          "----------------------------------"
+        }
+        case _ => "error input"
+      })
+    }
+    catch {
+      case ex: ArithmeticException => println("Divide by zero")
+    }
   }
 
   def calculate(numList: List[Int], operatorList: List[String]): String = {
@@ -30,12 +35,7 @@ object Calculator extends App {
         operatorList.head match {
           case "-" | "+" => getSumList(numList.head :: sumList, numList.drop(1), operatorList.drop(1))
           case "*" => getSumList(sumList, (numList.head * numList(1)) :: numList.drop(2), operatorList.drop(1))
-          case "/" => if (numList(1) != 0) {
-            getSumList(sumList, (numList.head / numList(1)) :: numList.drop(2), operatorList.drop(1))
-          }
-          else {
-            throw new Exception("Divide by zero")
-          }
+          case "/" => getSumList(sumList, (numList.head / numList(1)) :: numList.drop(2), operatorList.drop(1))
         }
       }
       else {
@@ -44,6 +44,7 @@ object Calculator extends App {
     }
 
     val sList = List[Int]()
+
     val sumList = getSumList(sList, numList, operatorList)
     val isMulti = (op: String) => (op != "/" && op != "*")
     val plusMinusList = operatorList.filter(isMulti)
