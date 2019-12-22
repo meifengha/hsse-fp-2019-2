@@ -21,3 +21,5 @@ def calculator(left: String, op: String, right: String): Unit = {
   }
   
 }
+
+//calculator("1.9", "+", "7.2")
