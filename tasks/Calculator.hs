@@ -218,7 +218,6 @@ hexChar 14 = 'e'
 hexChar 15 = 'f'
 hexChar _ = '0'
 
-
 hexInt :: Char -> Int
 hexInt '1' = 1
 hexInt '2' = 2
