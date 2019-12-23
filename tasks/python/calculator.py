@@ -1,12 +1,12 @@
 def readOperator(expr: str):
   isNumber = expr[0].isdigit()
   i = 0
-  if isNumber:
+  if (isNumber):
     point = False
     for c in expr:
-      if c.isdigit():
+      if (c.isdigit()):
         i += 1
-      elif c == '.':
+      elif (c == '.'):
         if point:
           raise 2
         i += 1
@@ -14,7 +14,7 @@ def readOperator(expr: str):
       else:
         break
   else:
-    if expr[0] not in ['+', '-', '*', '/']:
+    if (expr[0] not in ['+', '-', '*', '/', '(', ')']):
       raise 2;
     i = 1
     
@@ -41,9 +41,18 @@ def infixToPostfix(expr: str):
     
     if (op.isdigit() or isFloat(op)):
       stack += [op]
+    elif (op == '('):
+      opStack += [op]
+    elif (op == ')'):
+      while (1):
+        if (opStack[-1] == '('):
+          opStack = opStack[:-1]
+          break
+        else:
+          stack, opStack = stack + [opStack[-1]], opStack[:-1]
     else:
-      while 1:
-        if not len(opStack):
+      while (1):
+        if ((not len(opStack)) or opStack[-1] == '('):
           opStack += [op]
           break
         else:
@@ -69,7 +78,7 @@ def calculate(expr: str):
   postfix = infixToPostfix(expr)
   stack = []
   for op in postfix:
-    if op in ops:
+    if (op in ops):
       rhs, lhs, stack = stack[-2], stack[-1], stack[:-2]
       stack += [eval('%s %s %s' % (rhs, op, lhs))]
     else:
@@ -83,7 +92,7 @@ def outputExpression(expr: str):
   print("Postfix notation is: %s" % ' '.join(infixToPostfix(expr)))
 
 def main():
-  outputExpression('1.1 + 5 * 10 + 5')
+  outputExpression('(1.1 + 5 * 2) * 10 + 5')
   print('\n')
   outputExpression('12852,643 / 37 * 0,32 + 31 / 6 + 52') # Thank you, @Polykek2K!
   
