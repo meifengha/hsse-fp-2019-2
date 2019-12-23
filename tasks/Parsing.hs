@@ -25,6 +25,7 @@ instance MonadPlus Parser where
                                  []        -> parse q inp
                                  [(v,out)] -> [(v,out)])
 
+
 instance Alternative Parser where
    empty = mzero
    (<|>) = mplus
@@ -120,9 +121,11 @@ int =  do char '-'
           return (-n)
         +++ nat
 
+
 space :: Parser ()
 space =  do many (sat isSpace)
             return ()
+
 
 token  :: Parser a -> Parser a
 token p =  do space
