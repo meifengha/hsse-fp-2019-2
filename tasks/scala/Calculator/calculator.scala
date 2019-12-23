@@ -1,46 +1,28 @@
-package calculator
+package Calc
 
-sealed abstract class Expr
+object Main {
+  def main(args: Array[String]) {
+    val expressionList = List(
+      "9 + 4",
+      "12 - 4",
+      "54 * 9",
+      "9 / 4"
+    );
 
-final case class Literal(v: Double) extends Expr
-final case class Ref(name: String) extends Expr
-final case class Plus(a: Expr, b: Expr) extends Expr
-final case class Minus(a: Expr, b: Expr) extends Expr
-final case class Times(a: Expr, b: Expr) extends Expr
-final case class Divide(a: Expr, b: Expr) extends Expr
-
-object Calculator {
-  def computeValues(namedExpressions: Map[String, Signal[Expr]]): Map[String, Signal[Double]] = {
-    for {
-      (variable, expression) <- namedExpressions
-    } yield {
-      (variable -> Signal(eval(expression(), namedExpressions)))
+    for (expression <- expressionList) {
+      println(expression + " = " + calculate(expression));
     }
   }
 
-  def eval(expr: Expr, references: Map[String, Signal[Expr]]): Double = {
-    expr match {
-      case Literal(v) => v
-      case Ref(name) => {
-        val ref = getReferenceExpr(name, references)
-        eval(ref, references - name)
-      }
-      case Plus(a, b) => eval(a, references) + eval(b, references)
-      case Minus(a, b) => eval(a, references) - eval(b, references)
-      case Times(a, b) => eval(a, references) * eval(b, references)
-      case Divide(a, b) => eval(a, references) / eval(b, references)
+  def calculate(expression: String): Double = {
+    def evaluate(expression: List[String]): Double = expression match {
+      case l :: "+" :: r :: rest => evaluate((l.toDouble + r.toDouble).toString :: rest)
+      case l :: "-" :: r :: rest => evaluate((l.toDouble - r.toDouble).toString :: rest)
+      case l :: "*" :: r :: rest => evaluate((l.toDouble * r.toDouble).toString :: rest)
+      case l :: "/" :: r :: rest => evaluate((l.toDouble / r.toDouble).toString :: rest)
+      case value :: Nil => value.toDouble
     }
-  }
 
-  /**
-   * Get the Expr for a referenced variables.
-   * If the variable is not known, returns a literal NaN.
-   */
-  private def getReferenceExpr(name: Strin references: Map[String, Signal[Expr]]) = {
-    references.get(name).fold[Expr] {
-      Literal(Double.NaN)
-    } {
-      exprSignal => exprSignal()
-    }
+    evaluate(expression.split("\\s").toList)
   }
 }
