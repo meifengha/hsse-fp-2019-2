@@ -24,21 +24,28 @@ object Main {
 
   /**
    * Exercise 2 Parentheses Balancing
-   */
-  def balance(chars: List[Char]): Boolean = {
-    var cOpenParenth: Int = 0
-    var cCloseParenth: Int = 0
-    for (i <- 0 until chars.length) {
-      if (chars(i) == '(') { 
-        cOpenParenth += 1 
+   */  
+    def balance(chars: List[Char]): Boolean = {
+    def countParenth(list: List[Char], count: Int): Int = {
+      if (count < 0) {
+        count
       }
-      if (chars(i) == ')') { 
-        cCloseParenth += 1 
+      else if (list.isEmpty) {
+        count
       }
+      else if (list.head == '(') {
+        countParenth(list.tail, count + 1)
+      }
+      else if (list.head == ')') {
+        countParenth(list.tail, count - 1)
+      }
+      else countParenth(list.tail, count)
     }
-    if (cOpenParenth == cCloseParenth) {
-      true 
-    } else { 
+
+    if (countParenth(chars, 0) == 0) {
+      true
+    }
+    else {
       false
     }
   }
