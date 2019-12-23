@@ -165,6 +165,7 @@ displayExpr xs = do writeAt (2,2) "               "
                        then writeAt (2,2) $ replicate (boxWidth - length xs - 2) ' ' ++ xs
                        else writeAt (2,2) $ ">" ++ drop (length xs - boxWidth + 3) xs
 
+
 process :: Int -> Char -> String -> IO ()
 process n c xs
   | c == 'Q' = goto (boxHeight + 1, 1)                                       -- quit
@@ -191,7 +192,6 @@ displayAns n pxs xs = do writeAt (3,2) "               "
                          c <- getCh
                          process n c pxs
 
-
 decToHex :: Int -> String
 decToHex 0 = []
 decToHex n = if (n >= 0 ) then decToHex (n `div` 16) ++ [hexChar $ n `mod` 16] else '-' : decToHex (-n)
@@ -217,7 +217,6 @@ hexChar 13 = 'd'
 hexChar 14 = 'e'
 hexChar 15 = 'f'
 hexChar _ = '0'
-
 
 hexInt :: Char -> Int
 hexInt '1' = 1
