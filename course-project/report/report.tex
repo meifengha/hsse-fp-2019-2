@@ -1,0 +1,102 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+\usepackage[left=2.5cm, right=1.5cm, vmargin=2.5cm]{geometry}
+%Russian-specific packages
+%--------------------------------------
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian, english]{babel}
+%--------------------------------------
+\graphicspath{ {./img/} }
+
+\lstdefinestyle{mycode} {
+    backgroundcolor=\color{White},   
+    commentstyle=\color{ForestGreen},
+    keywordstyle=\color{Blue},
+    numberstyle=\tiny\color{Maroon},
+    stringstyle=\color{Plum},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    frame=single,
+    tabsize=2,
+}
+
+\begin{document}
+\lstset{style=mycode}
+
+\begin{titlepage}
+  \center
+  ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧЕРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ\linebreak  
+  «Санкт-Петербургский политехнический университет Петра Великого»\\[2cm] 
+  \textsc{\Large Институт компьютерных наук и технологий}\\[6.5cm]
+  
+  { 
+    \huge \bfseries Курсовой проект\\
+    по дисциплине «Функциональное программирование»
+  } \\[6.5cm]
+
+  \begin{multicols}{2}
+  \begin{flushright}
+    \large
+    
+    {Выполнил студент гр. 3530904/80002:}\\[0.5cm]
+    
+    {Руководитель\\
+    ассистент ВШПИ}
+
+  \end{flushright}
+  \begin{flushright}
+    
+    {Курлюк Ф. В.}\\[0.5cm]   
+     
+    Лукашин А. А.
+    
+  \end{flushright}
+  \end{multicols}
+  
+  \bigskip
+  \centering
+  {
+    Санкт-Петербург\\
+    2019
+  }
+  \vfill
+\end{titlepage}
+
+\section{Задание}
+  Калькулятор, поддерживающий простые арифметические операции, приоритеты и скобки.
+
+\section{Ход работы}
+  \subsection{Алгоритм решения}
+  Выражение, заданное в инфиксной нотации с помощью алгоритма сортировочной станции (\textbf{Shunting Yard Algorithm}) переводится в
+  обратную польскую нотацию, а затем вычисляется с помощью левоассоциативной свёртки получившегося списка токенов.
+  Код программы приведён в приложении.
+  \subsection{Скриншот}
+    \includegraphics[scale=1.0]{img.png}
+
+\section{Выводы}
+  В ходе работы был изучен функциональный подход к программированию, который значительно отличается от стандартного императивного подхода.
+  Изучены некоторые основные алгоритмы, используемые в функциональном программировании и произведена работа с ними.
+  \newpage
+
+\section{Приложение}
+  \subsection{Код файла main.hs}
+    \lstinputlisting[language=Haskell]{../main.hs}
+  \subsection{Код модуля calc.hs}
+    \lstinputlisting[language=Haskell]{../calc.hs}
+
+\end{document}
