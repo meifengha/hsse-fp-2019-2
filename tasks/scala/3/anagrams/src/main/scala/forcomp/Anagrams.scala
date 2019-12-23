@@ -1,6 +1,5 @@
 package forcomp
 
-
 import scala.collection.mutable
 
 object Anagrams {
