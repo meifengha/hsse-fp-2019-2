@@ -1,5 +1,11 @@
 package forcomp
 
+import java.io.{BufferedWriter, FileWriter}
+
+import forcomp.Anagrams.Word
+
+import scala.collection.mutable.ListBuffer
+
 object Anagrams {
 
   /** A word is simply a `String`. */
@@ -159,26 +165,3 @@ object Anagrams {
     sentenceAnagrams(sentenceOccurrences(sentence))
   }
 }
-
-object Dictionary {
-  def loadDictionary: List[String] = {
-    val wordstream = Option {
-      getClass.getResourceAsStream(List("forcomp", "linuxwords.txt").mkString("/", "/", ""))
-    } getOrElse {
-      sys.error("Could not load word list, dictionary file not found")
-    }
-    try {
-      val s = scala.io.Source.fromInputStream(wordstream)
-      s.getLines.toList
-    }
-    catch {
-      case e: Exception =>
-        println("Can`t load word list: " + e)
-        throw e
-    }
-    finally {
-      wordstream.close()
-    }
-  }
-}
-

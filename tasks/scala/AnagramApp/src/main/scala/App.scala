@@ -1,25 +1,22 @@
 import forcomp.Anagrams.{Sentence, Word}
-import javafx.beans.property.DoubleProperty
-import javafx.event.EventHandler
-import scalafx.application.JFXApp
-import scalafx.application.JFXApp.PrimaryStage
-import scalafx.event.ActionEvent
-import scalafx.geometry.Insets
-import scalafx.scene.Scene
-import scalafx.scene.control.{Button, Label, TextField}
-import scalafx.scene.effect.DropShadow
-import scalafx.scene.layout.{HBox, StackPane, VBox}
-import scalafx.scene.paint.Color.{Black, Cyan, DodgerBlue, PaleGreen, SeaGreen}
-import scalafx.scene.paint.{LinearGradient, Stops}
-import scalafx.scene.text.Text
-import scalafx.Includes._
 import forcomp._
-import scalafx.beans.property.StringProperty
+import scalafx.Includes._
+import scalafx.application.JFXApp
+import scalafx.geometry.Insets
+import scalafx.print.PrintColor.Color
+import scalafx.scene.Scene
+import scalafx.scene.control.ScrollPane.ScrollBarPolicy
+import scalafx.scene.control.{Button, Label, ScrollPane, TextField}
+import scalafx.scene.layout.{HBox, VBox}
+import scalafx.scene.paint.Color.SeaGreen
+import scalafx.scene.shape.Line
+import scalafx.scene.text.FontWeight.Black
 
 object App extends JFXApp {
   val SCREEN_WIDTH = 800
   val DEF_PADDING = 20
   val SCREEN_HEIGHT: Double = SCREEN_WIDTH / 2
+  val ANSWER_PLACEHOLDER: String = "Answers will be here."
 
 
   stage = new JFXApp.PrimaryStage {
@@ -28,25 +25,60 @@ object App extends JFXApp {
     scene = new Scene(SCREEN_WIDTH, SCREEN_HEIGHT) {
 
       val fieldSentence: TextField = new TextField {
+         promptText = "Type sentence here"
         minWidth = SCREEN_WIDTH / 2 - DEF_PADDING * 2
       }
 
-      val labelAnswer: Label = new Label("Answers will be here.") {
+
+      val labelAnswer: Label = new Label(ANSWER_PLACEHOLDER) {
         minWidth = SCREEN_WIDTH / 2 - DEF_PADDING * 2
+      }
+
+      val scrollPane: ScrollPane = new ScrollPane {
+        content = labelAnswer
+        vbarPolicy = ScrollBarPolicy.Always
+        maxHeight = SCREEN_HEIGHT / 2
+        minHeight = SCREEN_HEIGHT / 2
+      }
+
+      val buttonClearField: Button = new Button("Clear") {
+        onAction = handle {
+          fieldSentence.text = ""
+          labelAnswer.text = ANSWER_PLACEHOLDER
+          visible = false
+        }
+
+        visible = false
       }
 
       val buttonSubmitSentence: Button = new Button("Enter") {
+        onAction = handle {
+          val sentence: String = fieldSentence.text.value
+          val words: Array[Word] = sentence.split(" ")
+          val answerLines: List[Sentence] = Anagrams.sentenceAnagrams(words.toList)
+          val sb: StringBuilder = new StringBuilder
+          answerLines.foreach(line => {
+            line.foreach(word => {
+              sb.append(word).append(" ")
+            })
+            sb.append("\n")
+          })
+          labelAnswer.text = sb.toString()
 
+          buttonClearField.setVisible(true)
+        }
       }
 
-      buttonSubmitSentence.onAction = handle {
-        val sentence: String = fieldSentence.text.toString()
-        val words: Array[Word] = sentence.split(" ")
-        //        val answerLines: List[Sentence] = Anagrams.sentenceAnagrams(words.toList)
-        //        val sb : StringBuilder = new StringBuilder
-        //        answerLines.foreach(v => sb.append(v).append("\n"))
-        println(sentence)
-        //        labelAnswer.text = sb.toString()
+      val dictionaryField: TextField = new TextField {
+        minWidth = 250
+        promptText = "Type word to add to dictionary"
+      }
+
+      val buttonAddDictionary: Button = new Button("Edit Dictionary") {
+        onAction = handle {
+          val mytext = dictionaryField.text.value
+          forcomp.addWord(mytext)
+        }
       }
 
       fill = SeaGreen
@@ -60,17 +92,20 @@ object App extends JFXApp {
 
             children = Seq(
               fieldSentence,
-              labelAnswer
+              scrollPane,
+              buttonClearField
             )
           },
-          new VBox() {
-            minWidth = SCREEN_WIDTH / 2
+          buttonSubmitSentence,
+          new VBox(DEF_PADDING) {
+            minWidth = 200
 
-            children = buttonSubmitSentence
+            children = Seq(
+              dictionaryField,
+              buttonAddDictionary
+            )
           }
-
         )
-
       }
     }
   }
