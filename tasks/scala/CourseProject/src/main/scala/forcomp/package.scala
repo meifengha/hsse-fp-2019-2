@@ -26,7 +26,7 @@ package object forcomp {
   }
 
   def addWord(word: Word): Unit = {
-    val writer : BufferedWriter = new BufferedWriter(new FileWriter("/home/l0gark/Desktop/hsse-fp-2019-2/hsse-fp-2019-2/tasks/scala/AnagramApp/src/main/resources/forcomp/linuxwords.txt", true))
+    val writer : BufferedWriter = new BufferedWriter(new FileWriter("src/main/resources/forcomp/linuxwords.txttxt", true))
     writer.append(word + "\n")
     writer.close()
   }
