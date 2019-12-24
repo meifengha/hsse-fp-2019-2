@@ -3,14 +3,11 @@ import forcomp._
 import scalafx.Includes._
 import scalafx.application.JFXApp
 import scalafx.geometry.Insets
-import scalafx.print.PrintColor.Color
 import scalafx.scene.Scene
 import scalafx.scene.control.ScrollPane.ScrollBarPolicy
 import scalafx.scene.control.{Button, Label, ScrollPane, TextField}
 import scalafx.scene.layout.{HBox, VBox}
 import scalafx.scene.paint.Color.SeaGreen
-import scalafx.scene.shape.Line
-import scalafx.scene.text.FontWeight.Black
 
 object App extends JFXApp {
   val SCREEN_WIDTH = 800
@@ -20,7 +17,7 @@ object App extends JFXApp {
 
 
   stage = new JFXApp.PrimaryStage {
-    title = "Test-Program"
+    title = "Anagram Application"
 
     scene = new Scene(SCREEN_WIDTH, SCREEN_HEIGHT) {
 
