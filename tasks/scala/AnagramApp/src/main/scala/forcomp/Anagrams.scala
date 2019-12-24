@@ -1,11 +1,5 @@
 package forcomp
 
-import java.io.{BufferedWriter, FileWriter}
-
-import forcomp.Anagrams.Word
-
-import scala.collection.mutable.ListBuffer
-
 object Anagrams {
 
   /** A word is simply a `String`. */
