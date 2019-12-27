@@ -42,4 +42,5 @@ object Client {
     simplifying()
     evaluating()
   }
+  
 }
